@@ -1,0 +1,33 @@
+.app {
+  height: 100%;
+  overflow: hidden;
+  // overflow-y: auto;
+  position: relative;
+  background: linear-gradient(247.2deg, #e32f3e 0.57%, #eb6b3c 99.25%);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.hero {
+  background: transparent;
+  right: 50%;
+  top: 35%;
+  transform: translate(50%, -40%);
+  width: 100%;
+}
+
+.section {
+  &-placeholder {
+    background-color: transparent;
+    min-height: 100vh;
+  }
+
+  &-fixed {
+    background-color: transparent;
+    position: fixed;
+    z-index: 0;
+  }
+}
+
+@import "./bg";
+@import "./clock";
