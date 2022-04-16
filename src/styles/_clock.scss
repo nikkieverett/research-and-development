@@ -2,7 +2,7 @@
   &__container {
     background-color: transparent;
     position: fixed;
-    z-index: 0;
+    z-index: 2;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -10,40 +10,107 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100vw;
     text-align: center;
+    padding: 0 20px;
   }
 
   &__title {
-    font-size: 3vw;
-    margin-bottom: -50px;
+    font-family: "Permanent Marker", cursive;
+    font-size: 8vw;
     z-index: 1;
     color: #221f3d;
     position: relative;
+    line-height: 35px;
+  }
+
+  &__subtitle {
+    font-family: "Permanent Marker", cursive;
+    color: #221f3d;
+    font-size: 13vw;
+    margin-bottom: 80px;
+    line-height: 56px;
+    font-weight: 700;
   }
 
   &__clock {
     position: relative;
-    width: 100%;
-    padding: 0 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     z-index: 1;
+    flex-wrap: wrap;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding-right: 20px;
   }
 
   &__column {
-    flex-basis: 25%;
+    width: 49%;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 
-    &--text {
-      font-size: 2em;
+    &-text {
+      width: 100%;
+      text-align: center;
+      font-size: 5vw;
       color: #221f3d;
+      margin-top: 10px;
+      text-align: center;
+      background-color: rgba(#fcf4d7, 0.6);
+      border-radius: 6px;
+      margin-left: 10px;
     }
 
-    &--digit {
-      font-size: 15vw;
+    &-digit {
+      width: 100%;
+      text-align: center;
+      font-size: 14vw;
       color: #221f3d;
+      background-color: rgba(#fcf4d7, 0.6);
+      border-radius: 6px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .clock {
+    &__title {
+      font-size: 5vw;
+      margin-top: 0;
+      line-height: 80px;
+    }
+
+    &__subtitle {
+      font-size: 10vw;
+      margin-bottom: 100px;
+      line-height: 100px;
+    }
+
+    &__clock {
+      flex-wrap: nowrap;
+      padding-right: 0;
+      max-width: 1440px;
+    }
+
+    &__column {
+      width: 25%;
+
+      & + .clock__column {
+        margin-left: 20px;
+      }
+
+      &-text {
+        margin-left: 0;
+      }
+
+      &-digit {
+        margin-left: 0;
+      }
     }
   }
 }

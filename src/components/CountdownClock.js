@@ -1,6 +1,5 @@
 import anime from "animejs"
 import React, { useEffect, useRef, useState } from "react"
-import styled from "styled-components"
 
 const CountdownClock = () => {
   const [days, setDays] = useState(0)
@@ -97,25 +96,24 @@ const CountdownClock = () => {
 
   return (
     <div className="clock__container">
-      <div className="clock__title">
-        Countdown till our trek through the&nbsp;southwest
-      </div>
+      <div className="clock__title">Countdown till our&nbsp;trek through</div>
+      <div className="clock__subtitle">the&nbsp;southwest</div>
       <div className="clock__clock" ref={clockRef}>
         <div className="clock__column">
-          <div className="clock__column clock__column--digit">{days}</div>
-          <div className="clock__column clock__column--text">Days</div>
+          <div className="clock__column-digit">{days}</div>
+          <div className="clock__column-text">Days</div>
         </div>
         <div className="clock__column">
-          <div className="clock__column clock__column--digit">{hours}</div>
-          <div className="clock__column clock__column--text">Hours</div>
+          <div className="clock__column-digit">{hours}</div>
+          <div className="clock__column-text">Hrs</div>
         </div>
         <div className="clock__column">
-          <div className="clock__column clock__column--digit">{minutes}</div>
-          <div className="clock__column clock__column--text">Minutes</div>
+          <div className="clock__column-digit">{minutes}</div>
+          <div className="clock__column-text">Mins</div>
         </div>
         <div className="clock__column">
-          <div className="clock__column clock__column--digit">{seconds}</div>
-          <div className="clock__column clock__column--text">Seconds</div>
+          <div className="clock__column-digit">{seconds}</div>
+          <div className="clock__column-text">Secs</div>
         </div>
       </div>
     </div>

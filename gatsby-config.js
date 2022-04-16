@@ -3,9 +3,9 @@ module.exports = {
     title: `Research And Development`,
     author: {
       name: `Ryan and Nikki DuCharme`,
-      summary: `A who lives and works in San Francisco building useful things.`,
+      summary: `A compendium of our travels`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A blog site documentaing our travels.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
       twitter: `kylemathews`,
@@ -17,18 +17,10 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
     {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /images/, // See below to configure properly
-        },
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/articles`,
+        name: `articles`,
       },
     },
     {

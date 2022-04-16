@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:yaml/recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["yaml", "react"],
+  "files": ["*.yaml", "*.yml"]
+}

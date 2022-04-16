@@ -1,23 +1,81 @@
 backend:
   name: git-gateway
   branch: master
-
+site_domain: https://rndoutdoors.netlify.app/
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About Us"
+        name: "about"
+        file: "content/about-us.yml"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Intro, name: intro, widget: markdown }
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Position, name: position, widget: string }
+              - { label: Photo, name: photo, widget: image }
+  - name: "articles"
+    label: "Articles"
+    folder: "content/articles"
     create: true
     slug: "index"
     media_folder: ""
     public_folder: ""
     path: "{{title}}/index"
-    editor:
-      preview: false
+    editor: { preview: false }
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: [{ label: "", value: "" }],
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "select",
+          options: [{ label: "", value: "" }],
+        }
+  - name: "trips"
+    label: "Trips"
+    folder: "content/trips"
+    editor: { preview: false }
+    create: true
+    slug: "index"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
+    preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Start Date", name: "startDate", widget: "datetime" }
+      - { label: "End Date", name: "endDate", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - label: "Stops"
+        name: "stops"
+        widget: "list"
+        summary: "{{fields.city}}, {{fields.author.state}}"
+        fields:
+          - { label: City, name: city, widget: string }
+          - { label: State, name: state, widget: string }
+          - {
+              label: Articles,
+              name: articles,
+              widget: relation,
+              collection: articles,
+              search_fields: ["category"],
+              value_field: "{{slug}}",
+              display_fields: ["title"],
+            }
