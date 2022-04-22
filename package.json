@@ -15,6 +15,7 @@
     "gatsby-plugin-feed": "^4.9.0",
     "gatsby-plugin-gatsby-cloud": "^4.9.0",
     "gatsby-plugin-google-analytics": "^4.9.0",
+    "gatsby-plugin-google-gtag": "^4.12.1",
     "gatsby-plugin-image": "^2.9.0",
     "gatsby-plugin-manifest": "^4.9.0",
     "gatsby-plugin-netlify-cms": "^6.9.0",
