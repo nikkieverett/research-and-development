@@ -19,14 +19,14 @@
     font-family: "Permanent Marker", cursive;
     font-size: 8vw;
     z-index: 1;
-    color: #221f3d;
+    color: $primaryColor;
     position: relative;
     line-height: 35px;
   }
 
   &__subtitle {
     font-family: "Permanent Marker", cursive;
-    color: #221f3d;
+    color: $primaryColor;
     font-size: 13vw;
     margin-bottom: 80px;
     line-height: 56px;
@@ -57,7 +57,7 @@
       width: 100%;
       text-align: center;
       font-size: 5vw;
-      color: #221f3d;
+      color: $primaryColor;
       margin-top: 10px;
       text-align: center;
       background-color: rgba(#fcf4d7, 0.6);
@@ -69,7 +69,7 @@
       width: 100%;
       text-align: center;
       font-size: 14vw;
-      color: #221f3d;
+      color: $primaryColor;
       background-color: rgba(#fcf4d7, 0.6);
       border-radius: 6px;
       margin-left: 10px;

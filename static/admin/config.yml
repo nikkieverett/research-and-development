@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: master
-site_domain: https://rndoutdoors.netlify.app/
+site_domain: https://www.outdoorrnd.com/
 media_folder: static/img
 public_folder: /img
 

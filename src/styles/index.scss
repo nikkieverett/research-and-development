@@ -1,5 +1,19 @@
-.app {
+$primaryColor: #221f3d;
+$secondaryColor: #fcf4d7;
+
+body {
+  color: $primaryColor;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.fullscreen {
   height: 100vh;
+}
+
+.hero {
   overflow: hidden;
   position: relative;
   background: linear-gradient(247.2deg, #e32f3e 0.57%, #eb6b3c 99.25%);
@@ -18,11 +32,25 @@
   }
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $primaryColor;
+  z-index: 2;
+  font-size: 12px;
+  font-style: italic;
+}
+
 @import "./bg";
 @import "./clock";
+@import "./block";
+@import "./welcome";
+@import "./image-grid";
 
 @media screen and (min-width: 601px) {
-  .app {
+  .hero {
     &::before {
       height: 600px;
       background: url("../images/container.png") center top no-repeat;

@@ -8,10 +8,15 @@ const NotFoundPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <Seo title="404: Not Found" />
-      <h1>404: Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <h1>Whoopsies!</h1>
+      <p>
+        You've found a page that's not quite finished. We are probably too busy
+        hiking through the wilderness to notice...
+      </p>
+      <p>Feel free to check back later!</p>
+      <p>Much love, RND</p>
     </Layout>
   )
 }
