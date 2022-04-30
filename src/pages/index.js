@@ -26,7 +26,7 @@ import {
 } from "../images"
 
 const HomePage = ({ data, location }) => {
-  const [clockIsVisble, setClockIsVisible] = useState(false)
+  const [clockIsVisble, setClockIsVisible] = useState(true)
 
   const recentArticleData = {
     images: [lostInAmericaImage],
