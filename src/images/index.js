@@ -1,6 +1,6 @@
 import lostInAmericaImage from "../images/post-photos/lost-in-america-2.jpeg"
 import nyImage from "../images/gallery/NY_1.jpeg"
-import sanDiegoImage from "../images/gallery/sanDiego_1.jpeg"
+import sanDiegoImage from "../images/gallery/SanDiego_1.jpeg"
 import mexicoImage from "../images/gallery/Mexico_1.webp"
 import mexicoImage2 from "../images/gallery/Mexico_2.jpeg"
 import mexicoImage3 from "../images/gallery/Mexico_3.jpeg"
