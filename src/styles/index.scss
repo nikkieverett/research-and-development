@@ -1,5 +1,7 @@
 $primaryColor: #221f3d;
 $secondaryColor: #fcf4d7;
+$secondaryFont: "Permanent Marker", cursive;
+$boxShadow: 0px 25px 50px -12px rgba($primaryColor, 0.2);
 
 body {
   color: $primaryColor;
@@ -7,53 +9,15 @@ body {
 
 a {
   text-decoration: none !important;
+  color: $primaryColor !important;
 }
 
-.fullscreen {
-  height: 100vh;
-}
-
-.hero {
-  overflow: hidden;
-  position: relative;
-  background: linear-gradient(247.2deg, #e32f3e 0.57%, #eb6b3c 99.25%);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-
-  &::before {
-    content: "";
-    display: block; /*missing prop*/
-    background: url("../images/mobile-container.png") right top no-repeat;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: 767px;
-    z-index: 1;
-  }
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: $primaryColor;
-  z-index: 2;
-  font-size: 12px;
-  font-style: italic;
-}
-
-@import "./bg";
-@import "./clock";
-@import "./block";
-@import "./welcome";
-@import "./image-grid";
-
-@media screen and (min-width: 601px) {
-  .hero {
-    &::before {
-      height: 600px;
-      background: url("../images/container.png") center top no-repeat;
-    }
-  }
-}
+@import "../components/Hero/hero";
+@import "../components/NavBar/nav";
+@import "../components/Countdown/clock";
+@import "../components/Block/block";
+@import "../components/ImageGrid/image-grid";
+@import "./home";
+@import "./gallery";
+@import "./swiper";
+@import "./footer";

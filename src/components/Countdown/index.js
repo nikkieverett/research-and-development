@@ -1,5 +1,4 @@
-import anime from "animejs"
-import React, { useEffect, useRef, useState } from "react"
+import React, { useRef, useState } from "react"
 
 const CountdownClock = ({ setClockIsVisible }) => {
   const [days, setDays] = useState(0)
@@ -30,65 +29,6 @@ const CountdownClock = ({ setClockIsVisible }) => {
       clearInterval(x)
     }
   }, 0)
-
-  useEffect(() => {
-    const sun = document.querySelector("#sun")
-    const leftMountains = document.querySelectorAll(".mountain-left")
-    const rightMountains = document.querySelectorAll(".mountain-right")
-
-    clockRef.current.addEventListener("mouseenter", () => {
-      anime({
-        targets: leftMountains,
-        translateX: -20,
-        duration: 3000,
-        loop: 1,
-        direction: "alternate",
-        easing: "easeOutElastic",
-      })
-      anime({
-        targets: rightMountains,
-        translateX: 20,
-        duration: 3000,
-        loop: 1,
-        direction: "alternate",
-        easing: "easeOutElastic",
-      })
-      anime({
-        targets: sun,
-        translateY: -150,
-        duration: 10000,
-        loop: 1,
-        direction: "alternate",
-        easing: "easeOutElastic",
-      })
-    })
-    clockRef.current.addEventListener("mouseleave", () => {
-      anime({
-        targets: leftMountains,
-        translateX: 0,
-        duration: 3000,
-        loop: 1,
-        direction: "alternate",
-        easing: "easeOutElastic",
-      })
-      anime({
-        targets: rightMountains,
-        translateX: 0,
-        duration: 3000,
-        loop: 1,
-        direction: "alternate",
-        easing: "easeOutElastic",
-      })
-      anime({
-        targets: sun,
-        translateY: 0,
-        duration: 3000,
-        loop: 1,
-        direction: "alternate",
-        easing: "easeOutElastic",
-      })
-    })
-  }, [])
 
   return (
     <div className="clock__container">

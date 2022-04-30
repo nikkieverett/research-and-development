@@ -1,0 +1,29 @@
+.navbar {
+  background-color: white !important;
+  box-shadow: $boxShadow;
+
+  &-brand {
+    color: $primaryColor !important;
+    padding-left: 25px;
+    position: relative;
+
+    .logo {
+      background-image: url("../../public/icons/icon-48x48.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 10px;
+      left: 0px;
+    }
+  }
+
+  &-nav {
+    .nav-link {
+      color: $primaryColor !important;
+    }
+  }
+}

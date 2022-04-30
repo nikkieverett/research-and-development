@@ -1,12 +1,9 @@
 import * as React from "react"
-import { graphql } from "gatsby"
 
 import Layout from "../components/utils/layout"
 import Seo from "../components/utils/seo"
 
-const TripsPage = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-
+const TripsPage = ({ location }) => {
   return (
     <Layout location={location}>
       <Seo title="404: Not Found" />
@@ -22,13 +19,3 @@ const TripsPage = ({ data, location }) => {
 }
 
 export default TripsPage
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
