@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 
 // Third Party
-import { Card, Row, Col, Li } from "react-bootstrap"
+import { Card, Row, Col, Button, Stack, Container } from "react-bootstrap"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation } from "swiper"
 import "swiper/css/bundle"
@@ -10,7 +10,7 @@ import "swiper/css"
 import "swiper/css/navigation"
 
 // Local Components
-import CountdownClock from "../components/Countdown"
+import NavBar from "../components/NavBar"
 import Layout from "../components/utils/layout"
 import Block from "../components/Block"
 import Hero from "../components/Hero"
@@ -26,121 +26,83 @@ import {
 } from "../images"
 
 const HomePage = ({ data, location }) => {
-  const [clockIsVisble, setClockIsVisible] = useState(true)
+  const locationData = data.allMarkdownRemark.nodes[0].frontmatter
 
-  const recentArticleData = {
-    images: [lostInAmericaImage],
-    title: "Our Trip is Currently in&nbsp;Progress",
-    meta: {
-      entryDate: "Sat Apr 30, 2022",
-      author: "Ryan and Nikki DuCharme",
-    },
-    description:
-      "Check back soon for more deets on our current journey!<br/><br/> Much love - RND <3",
-    buttonPresent: false,
-  }
-
-  const tripsData = [
-    {
-      name: "Florida",
-      dates: [""],
-      travelType: "Flight",
-      coverImage: floridaImage,
-      href: "",
-    },
-    {
-      name: "Mexico",
-      dates: [""],
-      travelType: "Flight",
-      coverImage: mexicoImage,
-      href: "",
-    },
-    {
-      name: "San Diego",
-      dates: [""],
-      travelType: "Flight",
-      coverImage: sanDiegoImage,
-      href: "",
-    },
-    {
-      name: "New York",
-      dates: [""],
-      travelType: "Flight",
-      coverImage: nyImage,
-      href: "",
-    },
-  ]
-
+  console.log(locationData)
   return (
     <div className="app">
-      {clockIsVisble && (
-        <div className="hero hero--fullscreen">
-          <CountdownClock setClockIsVisible={setClockIsVisible} />
-        </div>
-      )}
-      {!clockIsVisble && (
-        <>
-          <Hero />
-          <div className="below-the-fold">
-            <Layout location={location}>
-              <div className="most-recent-article">
-                {/* <div className="section__title section__title--light">
-                  Most Recent Article
-                </div> */}
-                <Block data={recentArticleData} />
-              </div>
-              <div className="padding-offset"></div>
-              <div className="section">
-                <div className="section__title">Past Trips</div>
+      <NavBar />
+      <Container>
+        <div className="section">
+          <div className="current-location-block">
+            <Card>
+              <Card.Img variant="top" src={lostInAmericaImage} />
+              <Card.Body>
                 <Row>
-                  {tripsData.map(trip => {
-                    return (
-                      <Col key={trip.name}>
-                        <Card>
-                          <Card.Img variant="top" src={trip.coverImage} />
-                          <Card.Body>
-                            <Card.Title>{trip.name}</Card.Title>
-                          </Card.Body>
-                        </Card>
-                      </Col>
-                    )
-                  })}
+                  <Col xs={7}>
+                    <Card.Title>We are currently in...</Card.Title>
+                    <Card.Text>{locationData.currentLocation}</Card.Text>
+                  </Col>
+                  <Col xs={5}>
+                    <div className="card__button">
+                      <Button href="/southwest-roadtrip" variant="primary">
+                        Trip Details
+                      </Button>
+                    </div>
+                  </Col>
                 </Row>
-              </div>
-              <div className="section">
-                <div className="section__title">
-                  <a href="/gallery">Photo Gallery</a>
-                </div>
-                <Swiper
-                  slidesPerView={1}
-                  spaceBetween={30}
-                  slidesPerGroup={1}
-                  navigation={true}
-                  loopFillGroupWithBlank={false}
-                  modules={[Navigation]}
-                  className="gallerySwiper"
-                  loop={true}
-                  breakpoints={{
-                    768: {
-                      slidesPerView: 3,
-                      spaceBetween: 30,
-                      slidesPerGroup: 3,
-                    },
-                  }}
-                >
-                  {partialGallery.map(image => {
-                    return (
-                      <SwiperSlide key={image}>
-                        <img src={image}></img>
-                      </SwiperSlide>
-                    )
-                  })}
-                </Swiper>
-              </div>
-            </Layout>
+              </Card.Body>
+            </Card>
           </div>
-        </>
-      )}
+        </div>
+
+        <div className="section">
+          <div className="section__title">
+            <span>Current Trip Details</span>
+          </div>
+          {locationData.tripDetails.map(item => {
+            return (
+              <Card className="trip-counter__card">
+                <Stack gap={1}>
+                  <div className="trip-counter__number">{item.number}</div>
+                  <div className="trip-counter__title">{item.title}</div>
+                </Stack>
+              </Card>
+            )
+          })}
+        </div>
+
+        <div className="section">
+          <div className="section__title">
+            <span>Photo Gallery</span>
+          </div>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            slidesPerGroup={1}
+            navigation={true}
+            loopFillGroupWithBlank={false}
+            modules={[Navigation]}
+            className="gallerySwiper"
+            loop={true}
+            breakpoints={{
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+              },
+            }}
+          >
+            {partialGallery.map(image => {
+              return (
+                <SwiperSlide key={image}>
+                  <img src={image}></img>
+                </SwiperSlide>
+              )
+            })}
+          </Swiper>
+        </div>
+      </Container>
     </div>
   )
 }
@@ -149,21 +111,18 @@ export default HomePage
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      filter: { frontmatter: { title: { eq: "Current Location" } } }
+    ) {
       nodes {
-        excerpt
-        fields {
-          slug
-        }
+        id
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
           title
-          description
+          currentLocation
+          tripDetails {
+            title
+            number
+          }
         }
       }
     }

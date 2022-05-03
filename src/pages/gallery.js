@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/utils/layout"
 import ImageGrid from "../components/ImageGrid"
@@ -6,8 +7,8 @@ import ImageGrid from "../components/ImageGrid"
 import { galleryImages } from "../images"
 import NavBar from "../components/NavBar"
 
-const GalleryPage = ({ location }) => {
-  console.log(galleryImages)
+const GalleryPage = ({ data, location }) => {
+  console.log(data)
   const row1 = [
     galleryImages[0],
     galleryImages[1],
@@ -52,3 +53,20 @@ const GalleryPage = ({ location }) => {
 }
 
 export default GalleryPage
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+      nodes {
+        id
+        name
+        relativePath
+      }
+    }
+  }
+`

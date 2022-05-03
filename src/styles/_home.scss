@@ -1,35 +1,23 @@
 .app {
-  .below-the-fold {
-    background-color: white;
-    z-index: 2;
-    position: relative;
-    padding: 0 20px;
-  }
-
-  .most-recent-article {
+  .card__button {
+    a {
+      color: white !important;
+      background-color: $primaryColor !important;
+    }
     position: absolute;
-    background-color: white;
-    top: -250px;
-    width: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 4;
-    padding: 20px 10px;
-    border-radius: 10px;
-    box-shadow: 0px 25px 50px -12px rgba($primaryColor, 0.2);
+    bottom: 20px;
+    right: 20px;
   }
 
-  .padding-offset {
-    height: 0;
-    width: 100%;
-    display: block;
-  }
+  .trip-counter {
+    &__card {
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
 
-  .card {
-    margin-top: 10px;
-
-    .card-title {
-      font-size: 18px;
+    &__number {
+      font-size: 32px;
     }
   }
 
@@ -37,10 +25,29 @@
     margin-bottom: 40px;
 
     &__title {
-      font-family: $secondaryFont;
-      font-size: 22px;
-      color: $primaryColor;
-      margin-bottom: 12px;
+      position: relative;
+      text-align: center;
+      margin-bottom: 20px;
+
+      span {
+        display: inline-block;
+        margin: 0 auto;
+        background: white;
+        position: relative;
+        z-index: 2;
+        padding: 0 8px;
+        font-size: 22px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        border-bottom: 1px solid black;
+        top: 18px;
+      }
     }
   }
 }

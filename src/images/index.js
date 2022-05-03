@@ -20,8 +20,8 @@ import floridaImage7 from "../images/gallery/Florida_7.jpeg"
 import floridaImage8 from "../images/gallery/Florida_8.jpg"
 
 export const partialGallery = [
-  mexicoImage2,
   floridaImage2,
+  mexicoImage2,
   floridaImage3,
   batonRougeImage,
   mexicoImage3,

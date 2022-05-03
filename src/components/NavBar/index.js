@@ -4,7 +4,7 @@ import { Container, Navbar, Nav } from "react-bootstrap"
 const NavBar = () => {
   return (
     <>
-      <Navbar fixed="top" expand="lg">
+      <Navbar expand="lg">
         <Container>
           <Navbar.Brand>
             <span className="logo" />
@@ -17,12 +17,7 @@ const NavBar = () => {
           >
             <Nav>
               <Nav.Link href="/">Home</Nav.Link>
-              {/* <Nav.Link href="/articles">
-                Articles
-              </Nav.Link>
-              <Nav.Link href="/trips">
-                Trips
-              </Nav.Link> */}
+              <Nav.Link href="/trips">Trips</Nav.Link>
               <Nav.Link href="/gallery">Gallery</Nav.Link>
             </Nav>
           </Navbar.Collapse>

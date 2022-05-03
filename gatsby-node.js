@@ -9,17 +9,32 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const tripPage = path.resolve(`./src/templates/trip-page.js`)
 
   // Get all markdown blog posts sorted by date
-  const result = await graphql(
+  const tripResults = await graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
+        allFile(filter: { sourceInstanceName: { eq: "trips" } }) {
           nodes {
-            id
-            fields {
-              slug
+            childrenMarkdownRemark {
+              fields {
+                slug
+              }
+              id
+            }
+          }
+        }
+      }
+    `
+  )
+  const articleResults = await graphql(
+    `
+      {
+        allFile(filter: { sourceInstanceName: { eq: "articles" } }) {
+          nodes {
+            childrenMarkdownRemark {
+              fields {
+                slug
+              }
+              id
             }
           }
         }
@@ -27,30 +42,57 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
   )
 
-  if (result.errors) {
+  if (articleResults.errors || tripResults.errors) {
+    const errorMessage = ""
+    if (articleResults.errors) errorMessage = articleResults.errors
+    if (tripResults.errors) errorMessage = tripResults.errors
+
     reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
-      result.errors
+      `There was an error loading your blog pages`,
+      errorMessage
     )
     return
   }
 
-  const posts = result.data.allMarkdownRemark.nodes
+  const articles = articleResults.data.allFile.nodes
 
-  // Create blog posts pages
-  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
-  // `context` is available in the template as a prop and as a variable in GraphQL
-
-  if (posts.length > 0) {
-    posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].id
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+  if (articles.length > 0) {
+    articles.forEach((post, index) => {
+      const previousPostId =
+        index === 0 ? null : articles[index - 1].childrenMarkdownRemark[0].id
+      const nextPostId =
+        index === articles.length - 1
+          ? null
+          : articles[index + 1].childrenMarkdownRemark[0].id
 
       createPage({
-        path: post.fields.slug,
+        path: post.childrenMarkdownRemark[0].fields.slug,
         component: articlePage,
         context: {
-          id: post.id,
+          id: post.childrenMarkdownRemark[0].id,
+          previousPostId,
+          nextPostId,
+        },
+      })
+    })
+  }
+
+  const trips = tripResults.data.allFile.nodes
+
+  if (trips.length > 0) {
+    trips.forEach((post, index) => {
+      const previousPostId =
+        index === 0 ? null : trips[index - 1].childrenMarkdownRemark[0].id
+      const nextPostId =
+        index === trips.length - 1
+          ? null
+          : trips[index + 1].childrenMarkdownRemark[0].id
+
+      createPage({
+        path: post.childrenMarkdownRemark[0].fields.slug,
+        component: tripPage,
+        context: {
+          id: post.childrenMarkdownRemark[0].id,
           previousPostId,
           nextPostId,
         },
