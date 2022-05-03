@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Navbar, Nav } from "react-bootstrap"
+import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap"
 
 const NavBar = () => {
   return (
@@ -7,8 +7,10 @@ const NavBar = () => {
       <Navbar expand="lg">
         <Container>
           <Navbar.Brand>
-            <span className="logo" />
-            Outdoor RND
+            <a href="/">
+              <span className="logo" />
+              Outdoor RND
+            </a>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse
@@ -17,7 +19,11 @@ const NavBar = () => {
           >
             <Nav>
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/trips">Trips</Nav.Link>
+              <NavDropdown title="Trips" id="collasible-nav-dropdown">
+                <NavDropdown.Item href="/southwest-roadtrip">
+                  Southwest Roadtrip
+                </NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link href="/gallery">Gallery</Nav.Link>
             </Nav>
           </Navbar.Collapse>

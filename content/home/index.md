@@ -11,5 +11,6 @@ tripDetails:
     number: "2"
   - title: Hikes Completed
     number: "1"
-galleryImages: /img/pxl_20220502_200057336.jpeg
+galleryImages:
+  - image: /img/pxl_20220502_200057336.jpeg
 ---

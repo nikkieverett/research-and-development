@@ -7,12 +7,29 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Define a template for blog post
   const articlePage = path.resolve(`./src/templates/article-page.js`)
   const tripPage = path.resolve(`./src/templates/trip-page.js`)
+  const stopPage = path.resolve(`./src/templates/stop-page.js`)
 
   // Get all markdown blog posts sorted by date
   const tripResults = await graphql(
     `
       {
         allFile(filter: { sourceInstanceName: { eq: "trips" } }) {
+          nodes {
+            childrenMarkdownRemark {
+              fields {
+                slug
+              }
+              id
+            }
+          }
+        }
+      }
+    `
+  )
+  const stopResults = await graphql(
+    `
+      {
+        allFile(filter: { sourceInstanceName: { eq: "stops" } }) {
           nodes {
             childrenMarkdownRemark {
               fields {
@@ -42,10 +59,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
   )
 
-  if (articleResults.errors || tripResults.errors) {
+  if (articleResults.errors || tripResults.errors || stopResults.errors) {
     const errorMessage = ""
     if (articleResults.errors) errorMessage = articleResults.errors
     if (tripResults.errors) errorMessage = tripResults.errors
+    if (stopResults.errors) errorMessage = stopResults.errors
 
     reporter.panicOnBuild(
       `There was an error loading your blog pages`,
@@ -91,6 +109,29 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       createPage({
         path: post.childrenMarkdownRemark[0].fields.slug,
         component: tripPage,
+        context: {
+          id: post.childrenMarkdownRemark[0].id,
+          previousPostId,
+          nextPostId,
+        },
+      })
+    })
+  }
+
+  const stops = stopResults.data.allFile.nodes
+
+  if (stops.length > 0) {
+    stops.forEach((post, index) => {
+      const previousPostId =
+        index === 0 ? null : stops[index - 1].childrenMarkdownRemark[0].id
+      const nextPostId =
+        index === stops.length - 1
+          ? null
+          : stops[index + 1].childrenMarkdownRemark[0].id
+
+      createPage({
+        path: post.childrenMarkdownRemark[0].fields.slug,
+        component: stopPage,
         context: {
           id: post.childrenMarkdownRemark[0].id,
           previousPostId,

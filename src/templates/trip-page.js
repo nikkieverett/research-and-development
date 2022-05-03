@@ -1,27 +1,58 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
-import Bio from "../components/utils/bio"
-import Layout from "../components/utils/layout"
-import Seo from "../components/utils/seo"
+// Third Party
+import { Card, Row, Col, Button, Container, Stack } from "react-bootstrap"
 
-const TripTemplatePage = ({ data, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
-  console.log(data)
+// Local Components
+import NavBar from "../components/NavBar"
+
+const TripTemplatePage = ({ data }) => {
+  const tripDetails = data.markdownRemark.frontmatter
+  const visibleStops = tripDetails.stops
+    .reverse()
+    .filter(item => item.published)
 
   return (
-    <Layout location={location}>
-      <Seo title="404: Not Found" />
-      <h1>Whoopsies!</h1>
-      <p>
-        You've found a page that's not quite finished. We are probably too busy
-        hiking through the wilderness to notice...
-      </p>
-      <p>Feel free to check back later!</p>
-      <p>Much love, RND</p>
-    </Layout>
+    <div className="trip-page">
+      <NavBar />
+      <Container>
+        <Stack gap={3}>
+          {visibleStops.map((stop, index) => {
+            if (stop.published) {
+              const parsedStopName =
+                stop.city.replace(" ", "-").toLowerCase() +
+                "-" +
+                stop.state.toLowerCase()
+              return (
+                <Card className={index === 0 ? "card card--active" : "card"}>
+                  <Card.Img variant="top" src={stop.coverImage}></Card.Img>
+                  <Card.Body>
+                    <Row>
+                      <Col xs={8}>
+                        <Card.Title>
+                          {stop.city}, {stop.state}
+                        </Card.Title>
+                        <Card.Text>
+                          {stop.startDate} - {stop.endDate}
+                        </Card.Text>
+                      </Col>
+                      <Col xs={4}>
+                        <div className="card__button">
+                          <Button href={parsedStopName} variant="primary">
+                            Stop Details
+                          </Button>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              )
+            }
+          })}
+        </Stack>
+      </Container>
+    </div>
   )
 }
 
@@ -48,9 +79,8 @@ export const pageQuery = graphql`
           state
           startDate
           endDate
-          #   coverImage
-          articles
-          #   published
+          coverImage
+          published
         }
       }
     }

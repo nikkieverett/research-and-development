@@ -1,0 +1,22 @@
+.trip-page {
+  .vstack {
+    margin-top: 20px;
+  }
+
+  .card {
+    margin: 20px;
+
+    &__button {
+      a {
+        color: white !important;
+        background-color: $primaryColor !important;
+        border-color: $primaryColor;
+      }
+    }
+
+    &--active {
+      margin: 0;
+      border: black 1px solid;
+    }
+  }
+}

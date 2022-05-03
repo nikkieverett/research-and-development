@@ -11,19 +11,6 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "About Us"
-        name: "about"
-        file: "content/about-us.yml"
-        fields:
-          - { label: Title, name: title, widget: string }
-          - { label: Intro, name: intro, widget: markdown }
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Position, name: position, widget: string }
-              - { label: Photo, name: photo, widget: image }
       - label: "Home"
         name: "home"
         file: "content/home/index.md"
@@ -44,150 +31,108 @@ collections:
               - { label: Number, name: number, widget: string }
           - label: Gallery Images
             name: galleryImages
-            widget: image
-  - name: "articles"
-    label: "Articles"
-    folder: "content/articles"
-    create: true
-    slug: "{{title}}"
-    media_folder: ""
-    public_folder: ""
-    path: "{{title}}/index"
-    editor: { preview: true }
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "date" }
-      - {
-          label: "Description",
-          name: "description",
-          widget: "string",
-          required: false,
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - {
-          label: "Category",
-          name: "category",
-          widget: "select",
-          options:
-            [
-              { label: "Southwest Roadtrip", value: "southwest-roadtrip" },
-              { label: "Other", value: "other" },
-            ],
-        }
-      - {
-          label: "Tags",
-          name: "tags",
-          widget: "select",
-          multiple: true,
-          options:
-            [
-              { label: "Hiking", value: "hiking" },
-              { label: "Golfing", value: "golfing" },
-              { label: "Lodgings", value: "lodgings" },
-              { label: "Dinind", value: "dining" },
-              { label: "Planning", value: "planning" },
-              { label: "Driving", value: "driving" },
-            ],
-        }
-      - { label: "Images", name: "images", widget: "image", required: false }
+            widget: list
+            fields:
+              - { label: Image, name: image, widget: image }
   - name: "stops"
     label: "Stops"
     folder: "content/stops"
     editor: { preview: false }
-    slug: "{{title}}"
+    slug: "{{location}}"
     create: true
-    path: "{{title}}/index"
+    path: "{{location}}/index"
     fields:
-      - label: "Stop"
-        name: "stop"
+      - { label: "Location / Name", name: "location", widget: "string" }
+      - label: "Daily Log"
+        name: "dailyLog"
         widget: "list"
         fields:
-          - { label: "Location / Name", name: "location", widget: "string" }
-          - label: "Daily Log"
-            name: "dailyLog"
-            widget: "list"
-            fields:
-              - { label: "Day # / Title", name: "title", widget: "string" }
-              - { label: "Date", name: "date", widget: "date" }
-              - { label: "Content", name: "content", widget: "markdown" }
-              - {
-                  label: "Cover Image",
-                  name: "coverImage",
-                  widget: "image",
-                  required: false,
-                }
-          - label: "Hiking"
-            name: "hiking"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - {
-                  label: "Subtitle",
-                  name: "subtitle",
-                  widget: "string",
-                  required: false,
-                }
-              - { label: "Content", name: "content", widget: "markdown" }
-              - {
-                  label: "Cover Image",
-                  name: "coverImage",
-                  widget: "image",
-                  required: false,
-                }
-          - label: "Golfing"
-            name: "golfing"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - {
-                  label: "Subtitle",
-                  name: "subtitle",
-                  widget: "string",
-                  required: false,
-                }
-              - { label: "Content", name: "content", widget: "markdown" }
-              - {
-                  label: "Cover Image",
-                  name: "coverImage",
-                  widget: "image",
-                  required: false,
-                }
-          - label: "Lodging"
-            name: "lodging"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - {
-                  label: "Subtitle",
-                  name: "subtitle",
-                  widget: "string",
-                  required: false,
-                }
-              - { label: "Content", name: "content", widget: "markdown" }
-              - {
-                  label: "Cover Image",
-                  name: "coverImage",
-                  widget: "image",
-                  required: false,
-                }
-          - label: "Dining"
-            name: "dining"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - {
-                  label: "Subtitle",
-                  name: "subtitle",
-                  widget: "string",
-                  required: false,
-                }
-              - { label: "Content", name: "content", widget: "markdown" }
-              - {
-                  label: "Cover Image",
-                  name: "coverImage",
-                  widget: "image",
-                  required: false,
-                }
+          - { label: "Day # / Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "date", format: "MMM D YY" }
+          - { label: "Content", name: "content", widget: "markdown" }
+          - {
+              label: "Cover Image",
+              name: "coverImage",
+              widget: "image",
+              required: false,
+            }
+      - label: "Hiking"
+        name: "hiking"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Subtitle",
+              name: "subtitle",
+              widget: "string",
+              required: false,
+            }
+          - { label: "Content", name: "content", widget: "markdown" }
+          - {
+              label: "Cover Image",
+              name: "coverImage",
+              widget: "image",
+              required: false,
+            }
+      - label: "Golfing"
+        name: "golfing"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Subtitle",
+              name: "subtitle",
+              widget: "string",
+              required: false,
+            }
+          - { label: "Content", name: "content", widget: "markdown" }
+          - {
+              label: "Cover Image",
+              name: "coverImage",
+              widget: "image",
+              required: false,
+            }
+      - label: "Lodging"
+        name: "lodging"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Subtitle",
+              name: "subtitle",
+              widget: "string",
+              required: false,
+            }
+          - { label: "Content", name: "content", widget: "markdown" }
+          - {
+              label: "Cover Image",
+              name: "coverImage",
+              widget: "image",
+              required: false,
+            }
+      - label: "Dining"
+        name: "dining"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Subtitle",
+              name: "subtitle",
+              widget: "string",
+              required: false,
+            }
+          - { label: "Content", name: "content", widget: "markdown" }
+          - {
+              label: "Cover Image",
+              name: "coverImage",
+              widget: "image",
+              required: false,
+            }
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        fields:
+          - { label: "Image", name: "image", widget: "image" }
   - name: "trips"
     label: "Trips"
     folder: "content/trips"
@@ -197,8 +142,18 @@ collections:
     path: "{{title}}/index"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Start Date", name: "startDate", widget: "date" }
-      - { label: "End Date", name: "endDate", widget: "date" }
+      - {
+          label: "Start Date",
+          name: "startDate",
+          widget: "date",
+          format: "MMM D YY",
+        }
+      - {
+          label: "End Date",
+          name: "endDate",
+          widget: "date",
+          format: "MMM D YY",
+        }
       - { label: "Description", name: "description", widget: "string" }
       - label: "Stops"
         name: "stops"
@@ -207,22 +162,22 @@ collections:
         fields:
           - { label: City, name: city, widget: string }
           - { label: State, name: state, widget: string }
-          - { label: "Start Date", name: "startDate", widget: "date" }
-          - { label: "End Date", name: "endDate", widget: "date" }
+          - {
+              label: "Start Date",
+              name: "startDate",
+              widget: "date",
+              format: "MMM D YY",
+            }
+          - {
+              label: "End Date",
+              name: "endDate",
+              widget: "date",
+              format: "MMM D YY",
+            }
           - {
               laenl: "Cover Image",
               name: "coverImage",
               widget: "image",
-              required: false,
-            }
-          - {
-              label: Articles,
-              name: articles,
-              widget: relation,
-              collection: articles,
-              search_fields: ["category"],
-              value_field: "{{slug}}",
-              display_fields: ["title"],
               required: false,
             }
           - {

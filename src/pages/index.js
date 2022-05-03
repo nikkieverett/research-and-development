@@ -11,24 +11,10 @@ import "swiper/css/navigation"
 
 // Local Components
 import NavBar from "../components/NavBar"
-import Layout from "../components/utils/layout"
-import Block from "../components/Block"
-import Hero from "../components/Hero"
 
-// Images
-import {
-  nyImage,
-  sanDiegoImage,
-  floridaImage,
-  mexicoImage,
-  lostInAmericaImage,
-  partialGallery,
-} from "../images"
-
-const HomePage = ({ data, location }) => {
+const HomePage = ({ data }) => {
   const locationData = data.allMarkdownRemark.nodes[0].frontmatter
 
-  console.log(locationData)
   return (
     <div className="app">
       <NavBar />
@@ -36,7 +22,7 @@ const HomePage = ({ data, location }) => {
         <div className="section">
           <div className="current-location-block">
             <Card>
-              <Card.Img variant="top" src={lostInAmericaImage} />
+              <Card.Img variant="top" src={locationData.currentMapImage} />
               <Card.Body>
                 <Row>
                   <Col xs={7}>
@@ -62,7 +48,7 @@ const HomePage = ({ data, location }) => {
           </div>
           {locationData.tripDetails.map(item => {
             return (
-              <Card className="trip-counter__card">
+              <Card className="trip-counter__card" key={item.title}>
                 <Stack gap={1}>
                   <div className="trip-counter__number">{item.number}</div>
                   <div className="trip-counter__title">{item.title}</div>
@@ -93,10 +79,10 @@ const HomePage = ({ data, location }) => {
               },
             }}
           >
-            {partialGallery.map(image => {
+            {locationData.galleryImages.map(item => {
               return (
-                <SwiperSlide key={image}>
-                  <img src={image}></img>
+                <SwiperSlide key={item.image}>
+                  <img src={item.image}></img>
                 </SwiperSlide>
               )
             })}
@@ -119,6 +105,10 @@ export const pageQuery = graphql`
         frontmatter {
           title
           currentLocation
+          currentMapImage
+          galleryImages {
+            image
+          }
           tripDetails {
             title
             number

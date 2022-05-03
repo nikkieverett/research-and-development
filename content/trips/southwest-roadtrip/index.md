@@ -1,60 +1,74 @@
 ---
 title: Southwest Roadtrip
-startDate: 2022-05-01T00:27:09.970Z
-endDate: 2022-06-11T00:27:09.973Z
+startDate: Apr 30 2022
+endDate: Jun 10 2022
 description: Southwest Roadtrip
 stops:
-  - startDate: 2022-05-01T00:27:50.190Z
-    endDate: 2022-05-02T00:27:50.194Z
-    city: Forst Stockton
+  - startDate: Apr 30 2022
+    endDate: May 1 2022
+    city: Fort Stockton
     state: TX
-    articles: lost-in-america/index
-  - startDate: 2022-05-02T00:28:26.685Z
-    endDate: 2022-05-05T00:28:26.690Z
-    city: La Jitas
+    coverImage: /img/pxl_20220502_200057336.jpeg
+    published: true
+  - startDate: May 1 2022
+    endDate: May 4 2022
+    city: Lajitas
     state: TX
-  - startDate: 2022-05-05T00:33:25.641Z
-    endDate: 2022-05-07T00:33:25.649Z
+    coverImage: /img/pxl_20220502_200057336.jpeg
+    published: true
+  - startDate: May 4 2022
+    endDate: May 6 2022
     city: Carlsbad
     state: NM
-  - startDate: 2022-05-07T00:34:10.235Z
-    endDate: 2022-05-09T00:34:10.243Z
+    published: false
+  - startDate: May 6 2022
+    endDate: May 8 2022
     city: Las Cruces
     state: NM
-  - startDate: 2022-05-09T00:34:31.549Z
-    endDate: 2022-05-15T00:34:31.562Z
+    published: false
+  - startDate: May 8 2022
+    endDate: May 14 2022
     city: Tuscon
     state: AZ
-  - startDate: 2022-05-15T00:34:55.831Z
-    endDate: 2022-05-21T00:34:55.840Z
+    published: false
+  - startDate: May 14 2022
+    endDate: May 20 2022
     city: Sedona
     state: AZ
-  - startDate: 2022-05-21T00:35:25.110Z
-    endDate: 2022-05-22T00:35:25.119Z
+    published: false
+  - startDate: May 20 2022
+    endDate: May 21 2022
     city: Grand Canyon
     state: AZ
-  - startDate: 2022-05-22T00:35:56.244Z
-    endDate: 2022-05-24T00:35:56.255Z
+    published: false
+  - startDate: May 21 2022
+    endDate: May 23 2022
     city: Bryce Canyon
     state: UT
-  - startDate: 2022-05-24T00:36:36.544Z
-    endDate: 2022-05-26T00:36:36.555Z
+    published: false
+  - startDate: May 23 2022
+    endDate: May 25 2022
     city: Capitol Reef
     state: UT
-  - startDate: 2022-05-26T00:37:08.730Z
-    endDate: 2022-05-31T00:37:08.740Z
+    published: false
+  - startDate: May 25 2022
+    endDate: May 30 2022
     city: Durango
     state: CO
-  - startDate: 2022-05-31T00:37:35.755Z
-    endDate: 2022-06-05T00:37:35.765Z
+    published: false
+  - startDate: May 30 2022
+    endDate: Jun 04 2022
     city: Denver
     state: CO
-  - startDate: 2022-06-05T00:38:08.147Z
-    endDate: 2022-05-08T00:38:08.159Z
+    published: false
+  - startDate: Jun 04 2022
+    endDate: Jun 07 2022
     city: Santa Fe
     state: NM
-  - startDate: 2022-06-08T00:38:27.237Z
-    endDate: 2022-06-11T00:38:27.249Z
+    published: false
+  - startDate: Jun 07 2022
+    endDate: Jun 10 2022
     city: Lubbock
     state: TX
+    published: false
 ---
