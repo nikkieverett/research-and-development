@@ -1,7 +1,9 @@
 backend:
   name: git-gateway
   branch: master
-site_domain: https://www.outdoorrnd.com/
+  site_domain: cms.netlify.com
+  repo: nikkieverett/research-and-developmentß
+local_backend: true
 media_folder: static/img
 public_folder: /img
 
@@ -26,50 +28,75 @@ collections:
     label: "Articles"
     folder: "content/articles"
     create: true
-    slug: "index"
+    slug: "/articles/{{title}}"
     media_folder: ""
     public_folder: ""
     path: "{{title}}/index"
-    editor: { preview: false }
+    editor: { preview: true }
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "Category",
           name: "category",
           widget: "select",
-          options: [{ label: "", value: "" }],
+          options:
+            [
+              { label: "Southwest Roadtrip", value: "southwest-roadtrip" },
+              { label: "Other", value: "other" },
+            ],
         }
       - {
           label: "Tags",
           name: "tags",
           widget: "select",
-          options: [{ label: "", value: "" }],
+          multiple: true,
+          options:
+            [
+              { label: "Hiking", value: "hiking" },
+              { label: "Golfing", value: "golfing" },
+              { label: "Lodgings", value: "lodgings" },
+              { label: "Dinind", value: "dining" },
+              { label: "Planning", value: "planning" },
+              { label: "Driving", value: "driving" },
+            ],
         }
+      - { label: "Images", name: "images", widget: "image", required: false }
   - name: "trips"
     label: "Trips"
     folder: "content/trips"
     editor: { preview: false }
+    slug: "/trips/{{title}}"
     create: true
-    slug: "index"
-    media_folder: ""
-    public_folder: ""
     path: "{{title}}/index"
     preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Start Date", name: "startDate", widget: "datetime" }
-      - { label: "End Date", name: "endDate", widget: "datetime" }
+      - { label: "Start Date", name: "startDate", widget: "date" }
+      - { label: "End Date", name: "endDate", widget: "date" }
       - { label: "Description", name: "description", widget: "string" }
       - label: "Stops"
         name: "stops"
         widget: "list"
-        summary: "{{fields.city}}, {{fields.author.state}}"
+        summary: "{{fields.city}}, {{fields.state}}"
         fields:
           - { label: City, name: city, widget: string }
           - { label: State, name: state, widget: string }
+          - { label: "Start Date", name: "startDate", widget: "date" }
+          - { label: "End Date", name: "endDate", widget: "date" }
+          - {
+              laenl: "Cover Image",
+              name: "coverImage",
+              widget: "image",
+              required: false,
+            }
           - {
               label: Articles,
               name: articles,
@@ -78,4 +105,11 @@ collections:
               search_fields: ["category"],
               value_field: "{{slug}}",
               display_fields: ["title"],
+              required: false,
+            }
+          - {
+              label: Published,
+              name: published,
+              widget: boolean,
+              required: false,
             }
