@@ -6,6 +6,7 @@ import { Card, Row, Col, Button, Container, Stack } from "react-bootstrap"
 
 // Local Components
 import NavBar from "../components/NavBar"
+import Layout from "../components/utils/layout"
 
 const TripTemplatePage = ({ data }) => {
   const tripDetails = data.markdownRemark.frontmatter
@@ -14,44 +15,49 @@ const TripTemplatePage = ({ data }) => {
     .filter(item => item.published)
 
   return (
-    <div className="trip-page">
-      <NavBar />
-      <Container>
-        <Stack gap={3}>
-          {visibleStops.map((stop, index) => {
-            if (stop.published) {
-              const parsedStopName =
-                stop.city.replace(" ", "-").toLowerCase() +
-                "-" +
-                stop.state.toLowerCase()
-              return (
-                <Card className={index === 0 ? "card card--active" : "card"}>
-                  <Card.Img variant="top" src={stop.coverImage}></Card.Img>
-                  <Card.Body>
-                    <Row>
-                      <Col xs={8}>
-                        <Card.Title>
-                          {stop.city}, {stop.state}
-                        </Card.Title>
-                        <Card.Text>
-                          {stop.startDate} - {stop.endDate}
-                        </Card.Text>
-                      </Col>
-                      <Col xs={4}>
-                        <div className="card__button">
-                          <Button href={parsedStopName} variant="primary">
-                            Stop Details
-                          </Button>
-                        </div>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              )
-            }
-          })}
-        </Stack>
-      </Container>
+    <div className="app">
+      <div className="trip-page">
+        <NavBar />
+        <Layout>
+          <Stack gap={3}>
+            {visibleStops.map((stop, index) => {
+              if (stop.published) {
+                const parsedStopName =
+                  stop.city.replace(" ", "-").toLowerCase() +
+                  "-" +
+                  stop.state.toLowerCase()
+                return (
+                  <Card className={index === 0 ? "card--active" : ""}>
+                    <Card.Img variant="top" src={stop.coverImage}></Card.Img>
+                    <Card.Body>
+                      <Row>
+                        <Col xs={8}>
+                          <Card.Title>
+                            {stop.city}, {stop.state}
+                          </Card.Title>
+                          <Card.Text>
+                            {stop.startDate} - {stop.endDate}
+                          </Card.Text>
+                        </Col>
+                        <Col xs={4}>
+                          <div className="card__button">
+                            <Button
+                              href={`/${parsedStopName}`}
+                              variant="primary"
+                            >
+                              Stop Details
+                            </Button>
+                          </div>
+                        </Col>
+                      </Row>
+                    </Card.Body>
+                  </Card>
+                )
+              }
+            })}
+          </Stack>
+        </Layout>
+      </div>
     </div>
   )
 }

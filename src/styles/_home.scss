@@ -1,12 +1,16 @@
 .app {
+  .current-location-block {
+    margin-top: 10px;
+  }
+
   .card__button {
     a {
       color: white !important;
       background-color: $primaryColor !important;
     }
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 15px;
+    right: 15px;
   }
 
   .trip-counter {
@@ -22,7 +26,7 @@
   }
 
   .section {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     &__title {
       position: relative;
@@ -46,7 +50,7 @@
         left: 0;
         width: 100%;
         border-bottom: 1px solid black;
-        top: 18px;
+        top: 30px;
       }
     }
   }

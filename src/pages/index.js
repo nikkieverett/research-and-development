@@ -11,6 +11,7 @@ import "swiper/css/navigation"
 
 // Local Components
 import NavBar from "../components/NavBar"
+import Layout from "../components/utils/layout"
 
 const HomePage = ({ data }) => {
   const locationData = data.allMarkdownRemark.nodes[0].frontmatter
@@ -18,7 +19,7 @@ const HomePage = ({ data }) => {
   return (
     <div className="app">
       <NavBar />
-      <Container>
+      <Layout>
         <div className="section">
           <div className="current-location-block">
             <Card>
@@ -46,16 +47,20 @@ const HomePage = ({ data }) => {
           <div className="section__title">
             <span>Current Trip Details</span>
           </div>
-          {locationData.tripDetails.map(item => {
-            return (
-              <Card className="trip-counter__card" key={item.title}>
-                <Stack gap={1}>
-                  <div className="trip-counter__number">{item.number}</div>
-                  <div className="trip-counter__title">{item.title}</div>
-                </Stack>
-              </Card>
-            )
-          })}
+          <Row>
+            {locationData.tripDetails.map(item => {
+              return (
+                <Col xs={12} sm={6}>
+                  <Card className="trip-counter__card" key={item.title}>
+                    <Stack gap={1}>
+                      <div className="trip-counter__number">{item.number}</div>
+                      <div className="trip-counter__title">{item.title}</div>
+                    </Stack>
+                  </Card>
+                </Col>
+              )
+            })}
+          </Row>
         </div>
 
         <div className="section">
@@ -88,7 +93,7 @@ const HomePage = ({ data }) => {
             })}
           </Swiper>
         </div>
-      </Container>
+      </Layout>
     </div>
   )
 }

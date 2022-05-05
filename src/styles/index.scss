@@ -1,15 +1,29 @@
-$primaryColor: #221f3d;
-$secondaryColor: #fcf4d7;
+$primaryColor: #333d29;
+$secondaryColor: #656d4a;
+$primaryColorLight: #c2c5aa;
 $secondaryFont: "Permanent Marker", cursive;
-$boxShadow: 0px 25px 50px -12px rgba($primaryColor, 0.2);
+$boxShadow: 0px 10px 20px -4px rgba($primaryColor, 0.2);
+$boxShadowSecondary: 0px 6px 10px -4px rgba($primaryColor, 0.2);
 
 body {
-  color: $primaryColor;
+  color: $primaryColor !important;
 }
 
 a {
   text-decoration: none !important;
   color: $primaryColor !important;
+}
+
+.app {
+  .btn-primary {
+    background-color: $primaryColor;
+    border-color: $primaryColor;
+  }
+
+  .card {
+    border-color: transparent;
+    box-shadow: $boxShadowSecondary;
+  }
 }
 
 @import "../components/Hero/hero";
