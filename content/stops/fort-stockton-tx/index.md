@@ -12,7 +12,7 @@ dailyLog:
 
       There was some nice elevation change on the drive. We stopped at a "picnic area" that may have had the best views we've ever seen...from a picnic area at least (see gallery).
 
-      The landscape definitely got more "mountainous" as we drove west but nothing like what we were about to experience in Big Bend. We affectionately named the mesas along the way based on their shapes. The Mesas at Nipple Mountain was the best we had that day.\
+      The landscape definitely got more "mountainous" as we drove west but nothing like what we were about to experience in Big Bend. We affectionately named the mesas along the way based on their shapes. The Mesas at Nipple Mountain was the best we had that day.
 
       Fort Stockton was clearly a town that people stopped on their way to another place, but we happened to choose the best of the 4 hotels along the hotel strip in northwest Fort Stockton. Great location based on proximity to best food in town (McDonalds) and the best bar in town (our little bar in the Fairfield Inn and Suites).
 
@@ -70,6 +70,19 @@ dailyLog:
       Tomorrow brings golf on what has been rated the "#1 golf course you can play" in Texas for the last 7 years. Based on the driving range views, it's going to be quite the round.
     coverImage:
       - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.1_issr2i.jpg
+hiking:
+  - title: Dog Canyon Trail
+    content: This 4.1-mile out-and-back trail near Big Bend National Park, Texas is
+      generally considered an easy route. It takes an average of 1 h 31 min to
+      complete. This trail is great for hiking and walking, and it's unlikely
+      you'll encounter many other people while exploring. The trail is open
+      year-round and is beautiful to visit anytime.
+    subtitle: Big Bend National Park
+lodging:
+  - title: Fairfield Inn and Suites
+    subtitle: Fort Stockton
+    content: Not much to say about this one, as it was mostly a stop of convenience.
+      Just your standard hotel in the middle of nowhere.
 galleryImages:
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725066/DogCanyon.5_ujmexa.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.5_ipzzmf.jpg

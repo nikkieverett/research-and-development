@@ -30,35 +30,33 @@ dailyLog:
     coverImage:
       - https://res.cloudinary.com/outdoorrnd/image/upload/v1651761690/BJC.1_ixmt60.jpg
 hiking:
-  - title: Tuff Canyon
-    subtitle: Big Bend National Park
-    content: No details yet. Coming soon though <3
-  - title: Santa Elena Canyon Trail
-    subtitle: Big Bend National Park
-    content: No details yet. Coming soon though <3
-    coverImage: ""
-  - title: Upper Burrow Mesa Pouroff Trail
-    subtitle: Big Bend National Park
-    content: No details yet. Coming soon though <3
-    coverImage: https://res.cloudinary.com/outdoorrnd/image/upload/v1651762024/BJC.8_thn1ph.jpg
-golfing:
-  - title: Blackjack's Crossing
-    subtitle: Lajitas Golf Resort
-    content: No details yet. Coming soon though <3
+    - title: Hello Test
+    subtitle: Hello test
+    content: >-
+        We had such an incredible day with views that we may never see again on a golf course that might be one of the best on the planet as far as we're concerned. We both loaded up the aloe and lotion after a long day in the sun. Next up...a day back in Big Bend National Park! 
     coverImage:
-      - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762021/BJC.9_sj6zzm.jpg
+      - https://res.cloudinary.com/outdoorrnd/image/upload/v1651761690/BJC.1_ixmt60.jpg
+golfing:
+    - title: Hello Test
+    subtitle: Hello test
+    content: >-
+        We had such an incredible day with views that we may never see again on a golf course that might be one of the best on the planet as far as we're concerned. We both loaded up the aloe and lotion after a long day in the sun. Next up...a day back in Big Bend National Park! 
+    coverImage:
+      - https://res.cloudinary.com/outdoorrnd/image/upload/v1651761690/BJC.1_ixmt60.jpg
 lodging:
-  - title: Lajitas Golf Resort
-    content: No details yet. Coming soon though <3
-    subtitle: ""
+    - title: Hello Test
+    subtitle: Hello test
+    content: >-
+        We had such an incredible day with views that we may never see again on a golf course that might be one of the best on the planet as far as we're concerned. We both loaded up the aloe and lotion after a long day in the sun. Next up...a day back in Big Bend National Park! 
     coverImage:
       - https://res.cloudinary.com/outdoorrnd/image/upload/v1651761690/BJC.1_ixmt60.jpg
 dining:
-  - title: Candelilla Cafe
-    subtitle: Lajitas Golf Resort
-    content: No details yet. Coming soon though <3
+    - title: Hello Test
+    subtitle: Hello test
+    content: >-
+        We had such an incredible day with views that we may never see again on a golf course that might be one of the best on the planet as far as we're concerned. We both loaded up the aloe and lotion after a long day in the sun. Next up...a day back in Big Bend National Park! 
     coverImage:
-      - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762023/BJC.10_zljhre.jpg
+      - https://res.cloudinary.com/outdoorrnd/image/upload/v1651761690/BJC.1_ixmt60.jpg
 galleryImages:
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762024/BJC.8_thn1ph.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762023/BJC.10_zljhre.jpg

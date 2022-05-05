@@ -21,28 +21,38 @@ const StopPageTemplate = ({ data }) => {
             <Nav.Item>
               <Nav.Link eventKey="daily-log">Daily Log</Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="golfing">Golfing</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="hiking">Hiking</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="lodging">Lodging</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="dining">Dining</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey="gallery">Gallery</Nav.Link>
-            </Nav.Item>
+            {golfing && (
+              <Nav.Item>
+                <Nav.Link eventKey="golfing">Golfing</Nav.Link>
+              </Nav.Item>
+            )}
+            {hiking && (
+              <Nav.Item>
+                <Nav.Link eventKey="hiking">Hiking</Nav.Link>
+              </Nav.Item>
+            )}
+            {lodging && (
+              <Nav.Item>
+                <Nav.Link eventKey="lodging">Lodging</Nav.Link>
+              </Nav.Item>
+            )}
+            {dining && (
+              <Nav.Item>
+                <Nav.Link eventKey="dining">Dining</Nav.Link>
+              </Nav.Item>
+            )}
+            {galleryImages && (
+              <Nav.Item>
+                <Nav.Link eventKey="gallery">Gallery</Nav.Link>
+              </Nav.Item>
+            )}
           </Nav>
           <Tab.Content>
             <Tab.Pane eventKey="daily-log">
               {dailyLog &&
                 dailyLog.map(item => {
                   return (
-                    <div className="entry">
+                    <div className="entry" key={item.title}>
                       <Card.Title>{item.title}</Card.Title>
                       <Card.Subtitle>{item.date}</Card.Subtitle>
                       {item.content}
@@ -103,7 +113,7 @@ const StopPageTemplate = ({ data }) => {
                 {galleryImages &&
                   galleryImages.map(item => {
                     return (
-                      <Col xs={12} sm={4} className="column">
+                      <Col xs={12} sm={4} className="column" key={item}>
                         <img src={item}></img>
                       </Col>
                     )

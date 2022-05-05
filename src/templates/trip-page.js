@@ -25,7 +25,10 @@ const TripTemplatePage = ({ data }) => {
                   "-" +
                   stop.state.toLowerCase()
                 return (
-                  <Card className={index === 0 ? "card--active" : ""}>
+                  <Card
+                    className={index === 0 ? "card--active" : ""}
+                    key={stop.city}
+                  >
                     <Card.Img variant="top" src={stop.coverImage}></Card.Img>
                     <Card.Body>
                       <Row>

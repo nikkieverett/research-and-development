@@ -48,7 +48,7 @@ const HomePage = ({ data }) => {
           <Row>
             {locationData.tripDetails.map(item => {
               return (
-                <Col xs={12} sm={6}>
+                <Col xs={12} sm={6} key={item.title}>
                   <Card className="trip-counter__card" key={item.title}>
                     <Stack gap={1}>
                       <div className="trip-counter__number">{item.number}</div>
