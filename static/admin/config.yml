@@ -46,6 +46,10 @@ collections:
               widget: "string",
               required: false,
             }
+          - { label: "Length", name: "length", widget: "string" }
+          - { label: "Difficulty", name: "difficulty", widget: "string" }
+          - { label: "Elevation Gain", name: "elevation", widget: "string" }
+          - { label: "Time", name: "time", widget: "string" }
           - { label: "Content", name: "content", widget: "markdown" }
           - {
               label: "Cover Image",

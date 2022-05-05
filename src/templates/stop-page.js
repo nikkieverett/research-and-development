@@ -75,10 +75,25 @@ const StopPageTemplate = ({ data }) => {
             <Tab.Pane eventKey="hiking">
               {hiking &&
                 hiking.map(item => {
+                  console.log(item)
                   return (
                     <div className="entry" key={item.title}>
                       <Card.Title>{item.title}</Card.Title>
                       <Card.Subtitle>{item.date}</Card.Subtitle>
+                      <ul className="hike-details">
+                        <li>
+                          <span>Length</span>: {item.length}
+                        </li>
+                        <li>
+                          <span>Difficulty</span>: {item.difficulty}
+                        </li>
+                        <li>
+                          <span>Elevation Gain</span>: {item.elevation}
+                        </li>
+                        <li>
+                          <span>Time to Complete</span>: {item.time}
+                        </li>
+                      </ul>
                       <p>{item.content}</p>
                     </div>
                   )
@@ -150,6 +165,10 @@ export const pageQuery = graphql`
         hiking {
           title
           subtitle
+          length
+          elevation
+          time
+          difficulty
           content
           coverImage
         }

@@ -17,7 +17,7 @@ stops:
     state: TX
     coverImage:
       - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.1_issr2i.jpg
-    published: false
+    published: true
   - startDate: May 4 2022
     endDate: May 6 2022
     city: Carlsbad
