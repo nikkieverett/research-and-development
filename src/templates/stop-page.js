@@ -2,93 +2,115 @@ import * as React from "react"
 import { graphql } from "gatsby"
 
 // Third Party
-import {
-  Card,
-  Row,
-  Col,
-  Button,
-  Container,
-  Stack,
-  Tabs,
-  Tab,
-  TabContainer,
-  TabContent,
-} from "react-bootstrap"
+import { Card, Row, Nav, Tab } from "react-bootstrap"
 
 // Local Components
 import NavBar from "../components/NavBar"
+import Layout from "../components/utils/layout"
 
 const StopPageTemplate = ({ data }) => {
-  const { dailyLog, golfing, hiking, lodging, location } =
+  const { dailyLog, golfing, hiking, lodging, dining } =
     data.markdownRemark.frontmatter
 
   return (
     <>
       <NavBar />
-      <TabContainer>
-        <Tabs
-          defaultActiveKey="daily-log"
-          id="uncontrolled-tab-example"
-          className="mb-3"
-        >
-          <Tab eventKey="daily-log" title="Daily Log">
-            <Container>
-              {dailyLog &&
-                dailyLog.map(log => {
-                  return (
-                    <div className="entry">
-                      <Card.Title>{log.title}</Card.Title>
-                      <Card.Subtitle>{log.date}</Card.Subtitle>
-                      <p dangerouslySetInnerHTML={{ __html: log.content }}></p>
-                    </div>
-                  )
-                })}
-            </Container>
-          </Tab>
-          <Tab eventKey="golg" title="Golf" disabled={!golfing}>
-            <Container>
-              {golfing &&
-                golfing.map(log => {
-                  return (
-                    <>
-                      <Card.Title>{log.title}</Card.Title>
-                      <Card.Subtitle>{log.date}</Card.Subtitle>
-                      <p dangerouslySetInnerHTML={{ __html: log.content }}></p>
-                    </>
-                  )
-                })}
-            </Container>
-          </Tab>
-          <Tab eventKey="hiking" title="Hiking" disabled={!hiking}>
-            <Container>
-              {hiking &&
-                hiking.map(log => {
-                  return (
-                    <>
-                      <Card.Title>{log.title}</Card.Title>
-                      <Card.Subtitle>{log.date}</Card.Subtitle>
-                      <p dangerouslySetInnerHTML={{ __html: log.content }}></p>
-                    </>
-                  )
-                })}
-            </Container>
-          </Tab>
-          <Tab eventKey="lodging" title="Lodging" disabled={!lodging}>
-            <Container>
-              {lodging &&
-                lodging.map(log => {
-                  return (
-                    <>
-                      <Card.Title>{log.title}</Card.Title>
-                      <Card.Subtitle>{log.date}</Card.Subtitle>
-                      <p dangerouslySetInnerHTML={{ __html: log.content }}></p>
-                    </>
-                  )
-                })}
-            </Container>
-          </Tab>
-        </Tabs>
-      </TabContainer>
+      <Layout>
+        <div className="stop-cover-image"></div>
+        <Tab.Container id="left-tabs-example" defaultActiveKey="daily-log">
+          <Row>
+            <Nav variant="tabs">
+              <Nav.Item>
+                <Nav.Link eventKey="daily-log">Daily Log</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="golfing">Golfing</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="hiking">Hiking</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="lodging">Lodging</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey="dining">Dining</Nav.Link>
+              </Nav.Item>
+            </Nav>
+            <Tab.Content>
+              <Tab.Pane eventKey="daily-log">
+                {dailyLog &&
+                  dailyLog.map(item => {
+                    return (
+                      <div className="entry">
+                        <Card.Title>{item.title}</Card.Title>
+                        <Card.Subtitle>{item.date}</Card.Subtitle>
+                        <p
+                          dangerouslySetInnerHTML={{ __html: item.content }}
+                        ></p>
+                      </div>
+                    )
+                  })}
+              </Tab.Pane>
+              <Tab.Pane eventKey="golfing">
+                {golfing &&
+                  golfing.map(item => {
+                    return (
+                      <>
+                        <Card.Title>{item.title}</Card.Title>
+                        <Card.Subtitle>{item.date}</Card.Subtitle>
+                        <p
+                          dangerouslySetInnerHTML={{ __html: item.content }}
+                        ></p>
+                      </>
+                    )
+                  })}
+              </Tab.Pane>
+              <Tab.Pane eventKey="hiking">
+                {hiking &&
+                  hiking.map(item => {
+                    return (
+                      <>
+                        <Card.Title>{item.title}</Card.Title>
+                        <Card.Subtitle>{item.date}</Card.Subtitle>
+                        <p
+                          dangerouslySetInnerHTML={{ __html: item.content }}
+                        ></p>
+                      </>
+                    )
+                  })}
+              </Tab.Pane>
+              <Tab.Pane eventKey="lodging">
+                {lodging &&
+                  lodging.map(item => {
+                    return (
+                      <>
+                        <Card.Title>{item.title}</Card.Title>
+                        <Card.Subtitle>{item.date}</Card.Subtitle>
+                        <p
+                          dangerouslySetInnerHTML={{ __html: item.content }}
+                        ></p>
+                      </>
+                    )
+                  })}
+              </Tab.Pane>
+              <Tab.Pane eventKey="dining">
+                {dining &&
+                  dining.map(item => {
+                    return (
+                      <>
+                        <Card.Title>{item.title}</Card.Title>
+                        <Card.Subtitle>{item.date}</Card.Subtitle>
+                        <p
+                          dangerouslySetInnerHTML={{ __html: item.content }}
+                        ></p>
+                      </>
+                    )
+                  })}
+              </Tab.Pane>
+            </Tab.Content>
+          </Row>
+        </Tab.Container>
+      </Layout>
     </>
   )
 }
@@ -125,6 +147,11 @@ export const pageQuery = graphql`
           coverImage
         }
         lodging {
+          title
+          content
+          coverImage
+        }
+        dining {
           title
           content
           coverImage

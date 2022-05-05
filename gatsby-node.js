@@ -5,7 +5,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   // Define a template for blog post
-  const articlePage = path.resolve(`./src/templates/article-page.js`)
   const tripPage = path.resolve(`./src/templates/trip-page.js`)
   const stopPage = path.resolve(`./src/templates/stop-page.js`)
 
@@ -42,26 +41,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       }
     `
   )
-  const articleResults = await graphql(
-    `
-      {
-        allFile(filter: { sourceInstanceName: { eq: "articles" } }) {
-          nodes {
-            childrenMarkdownRemark {
-              fields {
-                slug
-              }
-              id
-            }
-          }
-        }
-      }
-    `
-  )
 
-  if (articleResults.errors || tripResults.errors || stopResults.errors) {
+  if (tripResults.errors || stopResults.errors) {
     const errorMessage = ""
-    if (articleResults.errors) errorMessage = articleResults.errors
     if (tripResults.errors) errorMessage = tripResults.errors
     if (stopResults.errors) errorMessage = stopResults.errors
 
@@ -70,29 +52,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       errorMessage
     )
     return
-  }
-
-  const articles = articleResults.data.allFile.nodes
-
-  if (articles.length > 0) {
-    articles.forEach((post, index) => {
-      const previousPostId =
-        index === 0 ? null : articles[index - 1].childrenMarkdownRemark[0].id
-      const nextPostId =
-        index === articles.length - 1
-          ? null
-          : articles[index + 1].childrenMarkdownRemark[0].id
-
-      createPage({
-        path: post.childrenMarkdownRemark[0].fields.slug,
-        component: articlePage,
-        context: {
-          id: post.childrenMarkdownRemark[0].id,
-          previousPostId,
-          nextPostId,
-        },
-      })
-    })
   }
 
   const trips = tripResults.data.allFile.nodes

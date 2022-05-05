@@ -13,31 +13,6 @@ media_library:
     multiple: true
 public_folder: /img
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-      - label: "Home"
-        name: "home"
-        file: "content/home/index.md"
-        fields:
-          - { label: Title, name: title, widget: string, required: false }
-          - { label: Current Location, name: currentLocation, widget: string }
-          - {
-              label: Current Location Map Image,
-              name: currentMapImage,
-              widget: image,
-              required: false,
-            }
-          - label: Trip Details
-            name: tripDetails
-            widget: list
-            fields:
-              - { label: Title, name: title, widget: string }
-              - { label: Number, name: number, widget: string }
-          - label: Gallery Images
-            name: galleryImages
-            widget: image
-            allow_multiple: true
   - name: "stops"
     label: "Stops"
     folder: "content/stops"
@@ -189,3 +164,27 @@ collections:
               widget: boolean,
               required: false,
             }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/home/index.md"
+        fields:
+          - { label: Title, name: title, widget: string, required: false }
+          - { label: Current Location, name: currentLocation, widget: string }
+          - {
+              label: Current Location Map Image,
+              name: currentMapImage,
+              widget: image,
+            }
+          - label: Trip Details
+            name: tripDetails
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Number, name: number, widget: string }
+          - label: Gallery Images
+            name: homeGalleryImages
+            widget: image
+            allow_multiple: true
