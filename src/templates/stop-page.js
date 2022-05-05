@@ -16,6 +16,7 @@ const StopPageTemplate = ({ data }) => {
     <>
       <NavBar />
       <Layout>
+        <div></div>
         <div className="stop-cover-image"></div>
         <Tab.Container id="left-tabs-example" defaultActiveKey="daily-log">
           <Row>

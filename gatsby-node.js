@@ -57,46 +57,32 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const trips = tripResults.data.allFile.nodes
 
   if (trips.length > 0) {
-    trips.forEach((post, index) => {
-      const previousPostId =
-        index === 0 ? null : trips[index - 1].childrenMarkdownRemark[0].id
-      const nextPostId =
-        index === trips.length - 1
-          ? null
-          : trips[index + 1].childrenMarkdownRemark[0].id
-
-      createPage({
-        path: post.childrenMarkdownRemark[0].fields.slug,
-        component: tripPage,
-        context: {
-          id: post.childrenMarkdownRemark[0].id,
-          previousPostId,
-          nextPostId,
-        },
-      })
+    trips.forEach(post => {
+      if (post.childrenMarkdownRemark.length > 0) {
+        createPage({
+          path: post.childrenMarkdownRemark[0].fields.slug,
+          component: tripPage,
+          context: {
+            id: post.childrenMarkdownRemark[0].id,
+          },
+        })
+      }
     })
   }
 
   const stops = stopResults.data.allFile.nodes
 
   if (stops.length > 0) {
-    stops.forEach((post, index) => {
-      const previousPostId =
-        index === 0 ? null : stops[index - 1].childrenMarkdownRemark[0].id
-      const nextPostId =
-        index === stops.length - 1
-          ? null
-          : stops[index + 1].childrenMarkdownRemark[0].id
-
-      createPage({
-        path: post.childrenMarkdownRemark[0].fields.slug,
-        component: stopPage,
-        context: {
-          id: post.childrenMarkdownRemark[0].id,
-          previousPostId,
-          nextPostId,
-        },
-      })
+    stops.forEach(post => {
+      if (post.childrenMarkdownRemark.length > 0) {
+        createPage({
+          path: post.childrenMarkdownRemark[0].fields.slug,
+          component: stopPage,
+          context: {
+            id: post.childrenMarkdownRemark[0].id,
+          },
+        })
+      }
     })
   }
 }
