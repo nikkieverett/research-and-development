@@ -5,8 +5,13 @@ backend:
   repo: nikkieverett/research-and-developmentß
 local_backend: true
 media_folder: static/img
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: outdoorrnd
+    api_key: 918386622724147
+    multiple: true
 public_folder: /img
-
 collections:
   - name: "pages"
     label: "Pages"
@@ -31,9 +36,8 @@ collections:
               - { label: Number, name: number, widget: string }
           - label: Gallery Images
             name: galleryImages
-            widget: list
-            fields:
-              - { label: Image, name: image, widget: image }
+            widget: image
+            allow_multiple: true
   - name: "stops"
     label: "Stops"
     folder: "content/stops"
@@ -130,9 +134,8 @@ collections:
             }
       - label: "Gallery"
         name: "galleryImages"
-        widget: "list"
-        fields:
-          - { label: "Image", name: "image", widget: "image" }
+        widget: "image"
+        allow_multiple: true
   - name: "trips"
     label: "Trips"
     folder: "content/trips"
