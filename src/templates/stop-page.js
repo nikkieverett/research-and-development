@@ -64,11 +64,11 @@ const StopPageTemplate = ({ data }) => {
               {golfing &&
                 golfing.map(item => {
                   return (
-                    <>
+                    <div className="entry" key={item.title}>
                       <Card.Title>{item.title}</Card.Title>
                       <Card.Subtitle>{item.date}</Card.Subtitle>
                       <p>{item.content}</p>
-                    </>
+                    </div>
                   )
                 })}
             </Tab.Pane>
@@ -76,11 +76,11 @@ const StopPageTemplate = ({ data }) => {
               {hiking &&
                 hiking.map(item => {
                   return (
-                    <>
+                    <div className="entry" key={item.title}>
                       <Card.Title>{item.title}</Card.Title>
                       <Card.Subtitle>{item.date}</Card.Subtitle>
                       <p>{item.content}</p>
-                    </>
+                    </div>
                   )
                 })}
             </Tab.Pane>
@@ -88,11 +88,11 @@ const StopPageTemplate = ({ data }) => {
               {lodging &&
                 lodging.map(item => {
                   return (
-                    <>
+                    <div className="entry" key={item.title}>
                       <Card.Title>{item.title}</Card.Title>
                       <Card.Subtitle>{item.date}</Card.Subtitle>
                       <p>{item.content}</p>
-                    </>
+                    </div>
                   )
                 })}
             </Tab.Pane>
@@ -100,11 +100,11 @@ const StopPageTemplate = ({ data }) => {
               {dining &&
                 dining.map(item => {
                   return (
-                    <>
+                    <div className="entry" key={item.title}>
                       <Card.Title>{item.title}</Card.Title>
                       <Card.Subtitle>{item.date}</Card.Subtitle>
                       <p>{item.content}</p>
-                    </>
+                    </div>
                   )
                 })}
             </Tab.Pane>

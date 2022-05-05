@@ -12,6 +12,16 @@ tripDetails:
   - title: Hikes Completed
     number: "4"
 homeGalleryImages:
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762024/BJC.8_thn1ph.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762023/BJC.10_zljhre.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762021/BJC.9_sj6zzm.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762020/BJC.6_ifasp4.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762013/BJC.3_z1pgsp.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762017/BJC.4_lxzszb.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762017/BJC.7_lzkdfy.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762015/BJC.2_kr253b.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762012/BJC.5_tjfqty.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651761690/BJC.1_ixmt60.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725066/DogCanyon.5_ujmexa.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.5_ipzzmf.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725063/DogCanyon.3_axqtr0.jpg
