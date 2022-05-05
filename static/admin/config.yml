@@ -166,6 +166,7 @@ collections:
             }
   - name: "pages"
     label: "Pages"
+    preview: false
     files:
       - label: "Home"
         name: "home"

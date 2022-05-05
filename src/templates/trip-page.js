@@ -2,10 +2,9 @@ import * as React from "react"
 import { graphql } from "gatsby"
 
 // Third Party
-import { Card, Row, Col, Button, Container, Stack } from "react-bootstrap"
+import { Card, Row, Col, Button, Stack } from "react-bootstrap"
 
 // Local Components
-import NavBar from "../components/NavBar"
 import Layout from "../components/utils/layout"
 
 const TripTemplatePage = ({ data }) => {
@@ -17,7 +16,6 @@ const TripTemplatePage = ({ data }) => {
   return (
     <div className="app">
       <div className="trip-page">
-        <NavBar />
         <Layout>
           <Stack gap={3}>
             {visibleStops.map((stop, index) => {
@@ -73,7 +71,6 @@ export const pageQuery = graphql`
     }
     markdownRemark(id: { eq: $id }) {
       id
-      excerpt(pruneLength: 160)
       html
       frontmatter {
         title

@@ -10,7 +10,6 @@ import "swiper/css"
 import "swiper/css/navigation"
 
 // Local Components
-import NavBar from "../components/NavBar"
 import Layout from "../components/utils/layout"
 
 const HomePage = ({ data }) => {
@@ -18,7 +17,6 @@ const HomePage = ({ data }) => {
 
   return (
     <div className="app">
-      <NavBar />
       <Layout>
         <div className="section">
           <div className="current-location-block">
@@ -84,10 +82,10 @@ const HomePage = ({ data }) => {
               },
             }}
           >
-            {locationData.galleryImages.map(item => {
+            {locationData.homeGalleryImages.map(item => {
               return (
-                <SwiperSlide key={item.image}>
-                  <img src={item.image}></img>
+                <SwiperSlide key={item}>
+                  <img src={item}></img>
                 </SwiperSlide>
               )
             })}
@@ -111,9 +109,7 @@ export const pageQuery = graphql`
           title
           currentLocation
           currentMapImage
-          galleryImages {
-            image
-          }
+          homeGalleryImages
           tripDetails {
             title
             number

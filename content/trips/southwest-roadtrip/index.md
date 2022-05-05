@@ -8,14 +8,16 @@ stops:
     endDate: May 1 2022
     city: Fort Stockton
     state: TX
-    coverImage: /img/pxl_20220502_200057336.jpeg
+    coverImage:
+      - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725056/Day1.PicnicArea_wxif5e.jpg
     published: true
   - startDate: May 1 2022
     endDate: May 4 2022
     city: Lajitas
     state: TX
-    coverImage: /img/pxl_20220502_200057336.jpeg
-    published: true
+    coverImage:
+      - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.1_issr2i.jpg
+    published: false
   - startDate: May 4 2022
     endDate: May 6 2022
     city: Carlsbad

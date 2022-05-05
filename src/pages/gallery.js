@@ -5,10 +5,8 @@ import Layout from "../components/utils/layout"
 import ImageGrid from "../components/ImageGrid"
 
 import { galleryImages } from "../images"
-import NavBar from "../components/NavBar"
 
 const GalleryPage = ({ data, location }) => {
-  console.log(data)
   const row1 = [
     galleryImages[0],
     galleryImages[1],
@@ -39,7 +37,6 @@ const GalleryPage = ({ data, location }) => {
   ]
   return (
     <>
-      <NavBar />
       <Layout location={location}>
         <div className="gallery__container">
           <ImageGrid images={row1} />

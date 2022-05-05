@@ -10,28 +10,13 @@ dailyLog:
       than six hours from Austin and had a decent Marriott hotel where we can
       use some reward points. 😎
 
-
-
-
       There was some nice elevation change on the drive. We stopped at a "picnic area" that may have had the best views we've ever seen...from a picnic area at least (see gallery).
 
-
-
-
-      The landscape definitely got more "mountainous" as we drove west but nothing like what we were about to experience in Big Bend. We affectionately named the mesas along the way based on their shapes. The Mesas at Nipple Mountain was the best we had that day.
-
-
-
+      The landscape definitely got more "mountainous" as we drove west but nothing like what we were about to experience in Big Bend. We affectionately named the mesas along the way based on their shapes. The Mesas at Nipple Mountain was the best we had that day.\
 
       Fort Stockton was clearly a town that people stopped on their way to another place, but we happened to choose the best of the 4 hotels along the hotel strip in northwest Fort Stockton. Great location based on proximity to best food in town (McDonalds) and the best bar in town (our little bar in the Fairfield Inn and Suites).
 
-
-
-
       As we normally do anywhere we go, we made a friend at the bar and chatted for several hours over drinks. Jake Jacobsen (if that is your real name 🧐) we appreciate the good company at the bar and the invite to play golf in Phoenix on our way through, we may still take you up on that and look forward to you following along on the trip!
-
-
-
 
       Overall a good day and great start to the trip!
     coverImage:
