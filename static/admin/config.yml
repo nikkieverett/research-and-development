@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
   site_domain: cms.netlify.com
-  repo: nikkieverett/research-and-developmentß
+  repo: nikkieverett/research-and-development
 local_backend: true
 media_folder: static/img
 media_library:
