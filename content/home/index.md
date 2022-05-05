@@ -1,6 +1,6 @@
 ---
 title: Current Location
-currentLocation: Lajitas, Tx
+currentLocation: Carlsbad, NM
 currentMapImage: /img/screen-shot-2022-05-03-at-11.02.25-am.png
 tripDetails:
   - title: Miles Driven
