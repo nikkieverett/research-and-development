@@ -4,13 +4,13 @@ currentLocation: Carlsbad, NM
 currentMapImage: /img/screen-shot-2022-05-04-at-8.34.27-pm.png
 tripDetails:
   - title: Miles Driven
-    number: "935"
+    number: "1039"
   - title: Days on the Road
     number: "5"
   - title: Rounds of Golf
     number: "2"
   - title: Hikes Completed
-    number: "4"
+    number: "6"
 homeGalleryImages:
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762024/BJC.8_thn1ph.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762023/BJC.10_zljhre.jpg
