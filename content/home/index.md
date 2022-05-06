@@ -6,11 +6,11 @@ tripDetails:
   - title: Miles Driven
     number: "1039"
   - title: Days on the Road
-    number: "5"
-  - title: Rounds of Golf
-    number: "2"
+    number: "6"
   - title: Hikes Completed
     number: "6"
+  - title: Rounds of Golf
+    number: "2"
 homeGalleryImages:
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762024/BJC.8_thn1ph.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762023/BJC.10_zljhre.jpg
