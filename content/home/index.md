@@ -2,16 +2,16 @@
 title: Current Location
 currentLocation: Las Cruces, NM
 currentMapImage:
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651950690/Screen_Shot_2022-05-07_at_1.10.45_PM_mfisam.png
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651966224/Screen_Shot_2022-05-07_at_1.10.45_PM_ksqnfj.png
 tripDetails:
   - title: Miles Driven
     number: "1253"
   - title: Days on the Road
-    number: "6"
+    number: "7"
   - title: Hikes Completed
     number: "6"
   - title: Rounds of Golf
-    number: "2"
+    number: "3"
   - title: Miles Hiked
     number: "17.3"
   - title: Parks Visited
