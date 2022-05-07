@@ -1,16 +1,21 @@
 ---
 title: Current Location
-currentLocation: Carlsbad, NM
-currentMapImage: /img/screen-shot-2022-05-04-at-8.34.27-pm.png
+currentLocation: Las Cruces, NM
+currentMapImage:
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651950690/Screen_Shot_2022-05-07_at_1.10.45_PM_mfisam.png
 tripDetails:
   - title: Miles Driven
-    number: "1039"
+    number: "1253"
   - title: Days on the Road
     number: "6"
   - title: Hikes Completed
     number: "6"
   - title: Rounds of Golf
     number: "2"
+  - title: Miles Hiked
+    number: "17.3"
+  - title: Parks Visited
+    number: "4"
 homeGalleryImages:
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762024/BJC.8_thn1ph.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762023/BJC.10_zljhre.jpg
