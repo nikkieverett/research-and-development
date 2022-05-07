@@ -13,7 +13,7 @@ tripDetails:
   - title: Rounds of Golf
     number: "3"
   - title: Miles Hiked
-    number: "17.3"
+    number: "19.8"
   - title: Parks Visited
     number: "4"
 homeGalleryImages:
