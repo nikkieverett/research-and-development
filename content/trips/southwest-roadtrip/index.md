@@ -22,7 +22,9 @@ stops:
     endDate: May 6 2022
     city: Carlsbad
     state: NM
-    published: false
+    published: true
+    coverImage:
+      - https://res.cloudinary.com/outdoorrnd/image/upload/v1652137473/CarlsbadCaverns.4_acdepu.jpg
   - startDate: May 6 2022
     endDate: May 8 2022
     city: Las Cruces
