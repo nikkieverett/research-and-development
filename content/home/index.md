@@ -1,13 +1,13 @@
 ---
 title: Current Location
-currentLocation: Las Cruces, NM
+currentLocation: Tucson, AZ
 currentMapImage:
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651966224/Screen_Shot_2022-05-07_at_1.10.45_PM_ksqnfj.png
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652062741/Tucson.1_ccemiv.png
 tripDetails:
   - title: Miles Driven
-    number: "1253"
+    number: "1529"
   - title: Days on the Road
-    number: "7"
+    number: "9"
   - title: Hikes Completed
     number: "6"
   - title: Rounds of Golf
@@ -15,7 +15,7 @@ tripDetails:
   - title: Miles Hiked
     number: "19.8"
   - title: Parks Visited
-    number: "4"
+    number: "5"
 homeGalleryImages:
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762024/BJC.8_thn1ph.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762023/BJC.10_zljhre.jpg
