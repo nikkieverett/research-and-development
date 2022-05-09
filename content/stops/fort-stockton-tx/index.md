@@ -74,10 +74,9 @@ hiking:
   - title: Dog Canyon Trail
     length: 4.1 miles
     elevation: 167 feet
-    time: 1 hour 30 mins
+    time: 1 hour 35 mins
     difficulty: Easy
-    content:
-      This 4.1-mile out-and-back trail near Big Bend National Park, Texas is
+    content: This 4.1-mile out-and-back trail near Big Bend National Park, Texas is
       generally considered an easy route. It takes an average of 1 h 31 min to
       complete. This trail is great for hiking and walking, and it's unlikely
       you'll encounter many other people while exploring. The trail is open
@@ -86,8 +85,7 @@ hiking:
 lodging:
   - title: Fairfield Inn and Suites
     subtitle: Fort Stockton
-    content:
-      Not much to say about this one, as it was mostly a stop of convenience.
+    content: Not much to say about this one, as it was mostly a stop of convenience.
       Just your standard hotel in the middle of nowhere.
 galleryImages:
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725066/DogCanyon.5_ujmexa.jpg
