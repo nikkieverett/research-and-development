@@ -62,23 +62,20 @@ hiking:
       The most popular route, the Big Room, is the largest single cave chamber by volume in North America. This **1.25 mile (2 km) trail** is relatively flat, and will take about **1.5 hours (on average) to walk it**. Actor and comedian Will Rogers called the cavern, "The Grand Canyon with a roof over it." You will be rewarded with spectacular views, cave formations of all shapes and sizes, and a rope ladder used by explorers in 1924.
     elevation: 750 feet
     time: 2.5 hours
-    coverImage:
-      - https://res.cloudinary.com/outdoorrnd/image/upload/v1652137473/CarlsbadCaverns.4_acdepu.jpg
   - title: Devil's Hall Trail
     subtitle: Guadalupe Mountains National Park
     length: 3.8 miles
     difficulty: Strenuous
     elevation: 548 feet
     time: 3-5 hours
-    content: The route to Devil's Hall departs from the Pine Springs Trailhead and
+    content:
+      The route to Devil's Hall departs from the Pine Springs Trailhead and
       is 3.8 miles round-trip. After the first mile the trail leads to a rocky
       wash which leads hikers to an impressive natural rock staircase leading to
       a "hallway" formed by steep canyon walls. The wash portion of the
       route requires the hiker to scramble over large boulders and other debris.
       This route offers spectacular views of geologic formations, steep canyon
       walls, tall trees, and mountaintops.
-    coverImage:
-      - https://res.cloudinary.com/outdoorrnd/image/upload/v1652137444/GMNP.7_fmczw6.jpg
 lodging: []
 dining: []
 galleryImages:

@@ -170,7 +170,6 @@ export const pageQuery = graphql`
           time
           difficulty
           content
-          coverImage
         }
         golfing {
           title
