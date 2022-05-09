@@ -17,25 +17,24 @@ tripDetails:
   - title: Parks Visited
     number: "5"
 homeGalleryImages:
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762024/BJC.8_thn1ph.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762023/BJC.10_zljhre.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762021/BJC.9_sj6zzm.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762020/BJC.6_ifasp4.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762013/BJC.3_z1pgsp.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762017/BJC.4_lxzszb.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762017/BJC.7_lzkdfy.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762015/BJC.2_kr253b.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762012/BJC.5_tjfqty.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651761690/BJC.1_ixmt60.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725066/DogCanyon.5_ujmexa.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.5_ipzzmf.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725063/DogCanyon.3_axqtr0.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.1_issr2i.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725059/Lajitas.2_fdrv65.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725059/DogCanyon.2_bv5pmf.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725058/Lajitas.3_ql3bly.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725057/Lajitas.4_cx4wks.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725056/Dog_Canyon.4_lxzusb.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725056/Day1.PicnicArea_wxif5e.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651718807/PXL_20220503_000150338.MP_exiecc.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651718808/PXL_20220503_002419545_vsricw.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725055/DogCanyon.1_bwvinn.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725056/Dog_Canyon.4_lxzusb.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725059/DogCanyon.2_bv5pmf.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725063/DogCanyon.3_axqtr0.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725066/DogCanyon.5_ujmexa.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651761690/BJC.1_ixmt60.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762012/BJC.5_tjfqty.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651762015/BJC.2_kr253b.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725057/Lajitas.4_cx4wks.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725058/Lajitas.3_ql3bly.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725059/Lajitas.2_fdrv65.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.1_issr2i.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.5_ipzzmf.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651765730/BigBend.1_tnoeo7.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651766349/BigBend.6_lxk6df.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651766368/BigBend.3_c1c8qb.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651766362/BigBend.2_eyb5qw.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651766368/BigBend.4_cgbbvb.jpg
 ---
