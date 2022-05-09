@@ -74,7 +74,7 @@ hiking:
   - title: Dog Canyon Trail
     length: 4.1 miles
     elevation: 167 feet
-    time: 1 hour 35 mins
+    time: 1 hour 30 mins
     difficulty: Easy
     content: This 4.1-mile out-and-back trail near Big Bend National Park, Texas is
       generally considered an easy route. It takes an average of 1 h 31 min to
