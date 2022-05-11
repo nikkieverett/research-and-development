@@ -7,15 +7,15 @@ tripDetails:
   - title: Miles Driven
     number: "1529"
   - title: Days on the Road
-    number: "9"
+    number: "11"
   - title: Hikes Completed
-    number: "6"
+    number: "7"
   - title: Rounds of Golf
-    number: "3"
-  - title: Miles Hiked
-    number: "19.8"
-  - title: Parks Visited
     number: "5"
+  - title: Miles Hiked
+    number: "22.3"
+  - title: Parks Visited
+    number: "6"
 homeGalleryImages:
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651718807/PXL_20220503_000150338.MP_exiecc.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651718808/PXL_20220503_002419545_vsricw.jpg
