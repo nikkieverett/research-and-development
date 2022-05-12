@@ -42,6 +42,32 @@ dailyLog:
       We couldn't thank Justine enough for such a wonderful evening! Off to Carlsbad Caverns in the morning...if we make it to the morning (\*insert creepy laugh\*)
     coverImage:
       - https://res.cloudinary.com/outdoorrnd/image/upload/v1652137387/TrinityHotel.2_rshfhm.jpg
+  - date: May 5 22
+    title: Day 6
+    content: >-
+      Happy Cinco de Mayo! We're excited about another National Parks day and
+      we've got two of them in store today!
+
+
+      Unfortunately neither of us slept great last night. Chalk it up to the ghost stories we heard all night in the restaurant. From the Mayor of Carlsbad to our waitress to people sitting at the bar, everyone had a story about seeing glasses fly off the bar or the music stop unexpectedly. We definitely woke up several times throughout the night thinking we heard something moving around the room, but good ol' Ruby didn't make an appearance after all. 👻 
+
+
+      The first stop of our day was the famous Carlsbad Caverns! The drive up to the visitor center and cavern entrance was surprising steep and offered more incredible views. We opted not to stop and take pictures as we already have plenty of 'mountains in the distance' pictures plus we were running a couple minutes behind for our reservation time. 
+
+
+      Checking in was super easy and we were off to adventure down the long winding trail into the darkness of the caverns! 🤠 We've been to a couple of the so-called caverns around the Austin area, but those look like tiny holes in the ground compared to Carlsbad. The entire cavern trail is indescribably beautiful! Everything you see is so grand and jaw dropping. We got some really good pictures in the caverns and are excited to share them here. 
+
+
+      There were no ranger guided tours but everyone in the caverns was pretty respectful and the reservation system for timed entry made it less busy which was much appreciated. We opted to walk the entire underground trail which is currently about 2.75 miles. We then decided to hike out of the caverns (rather than use the elevator) which is about a mile straight uphill. The switchbacks were seemingly never ending and our lungs were working overtime but we're really glad for the experience. The sign before you start the climb out of the caverns said it's like walking from the bottom to the top of the Empire State Building! Go us! 💪 
+
+
+      While still gasping for air, we grabbed a quick bite to eat at the little food court in the cavern gift shop (which had surprisingly decent food) and jumped back in the car for an afternoon adventure at Guadalupe Mountains National Park. 
+
+
+      We knew we didn't have time to do the 8.5 mile round trip hike to the top of Guadalupe Mountain, so we decided on a 4.5 mile trail called Devil's Hall Trail. The first half out isn't too bad and offers some amazing views of the mountains and the canyon. The second half is pretty tough. Crawling and hiking through a canyon wash over massive rocks and boulders is really hard on the knees but the payoff at the end of the trail was very worth it. The trek back offered cool breezes through the canyon and wonderful sunset views of the mountains at the last mile or so. Both of us were nursing tender knees along the last half mile of so and had to take it pretty slow, but this hike turned into one of our favorites so far on our trip! Pictures of Devil's Hall in the gallery of the Carlsbad stop!
+
+
+      We made our way back to the Trinity Hotel and Restaurant in time for another tasty dinner. Hopefully Ruby will let us get some sleep tonight, we definitely need it! 😴
 hiking:
   - title: Natural Entrance and Big Room Trail
     subtitle: Carlsbad Caverns
@@ -68,8 +94,7 @@ hiking:
     difficulty: Strenuous
     elevation: 548 feet
     time: 3-5 hours
-    content:
-      The route to Devil's Hall departs from the Pine Springs Trailhead and
+    content: The route to Devil's Hall departs from the Pine Springs Trailhead and
       is 3.8 miles round-trip. After the first mile the trail leads to a rocky
       wash which leads hikers to an impressive natural rock staircase leading to
       a "hallway" formed by steep canyon walls. The wash portion of the
@@ -79,5 +104,24 @@ hiking:
 lodging: []
 dining: []
 galleryImages:
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1651951603/GuadalupeMountainsNP.1.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652137444/GMNP.7_fmczw6.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374854/CarlsbadCaverns.5_bcb4hp.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374858/GMNP.1_qkqxbp.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374861/CarlsbadCaverns.6_nml10d.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374889/GMNP.4_v9ufws.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374898/GMNP.7_jagisf.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374907/GMNP.6_jw4nai.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374910/CarlsbadCaverns.9_awtej2.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374919/GMNP.9_qiyjup.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374937/GMNP.11_cqhib4.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374943/CarlsbadCaverns.14_hnlc1b.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374948/GMNP.12_azuit0.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374945/CarlsbadCaverns.12_iklne0.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374948/CarlsbadCaverns.17_wqkwwe.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374963/CarlsbadCaverns.18_ff6wdj.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374974/GMNP.14_p3vyqi.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374985/GMNP.15_rsfroz.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374929/CarlsbadCaverns.13_f5wwqq.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374886/CarlsbadCaverns.7_im1y2o.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374853/CarlsbadCaverns.1_ylytsw.jpg
 ---
