@@ -26,6 +26,10 @@ a {
   }
 }
 
+.fade {
+  opacity: 1 !important;
+}
+
 @import "../components/Hero/hero";
 @import "../components/NavBar/nav";
 @import "../components/Countdown/clock";

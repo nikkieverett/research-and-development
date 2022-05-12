@@ -1,15 +1,39 @@
-import * as React from "react"
+import React, { useState, useCallback } from "react"
 import { graphql } from "gatsby"
 
 // Third Party
 import { Card, Row, Nav, Tab, Col } from "react-bootstrap"
+import ImgsViewer from "react-images-viewer"
 
 // Local Components
 import Layout from "../components/utils/layout"
 
 const StopPageTemplate = ({ data }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [imageViewerIsOpen, setImageViewerIsOpen] = useState(false)
   const { dailyLog, golfing, hiking, lodging, dining, galleryImages } =
     data.markdownRemark.frontmatter
+
+  const openImageViewer = useCallback(
+    index => {
+      setCurrentImageIndex(index)
+      setImageViewerIsOpen(true)
+    },
+    [setCurrentImageIndex, setImageViewerIsOpen]
+  )
+
+  const gotoNextImg = useCallback(() => {
+    setCurrentImageIndex(currentImageIndex + 1)
+  }, [setCurrentImageIndex, currentImageIndex])
+
+  const gotoPrevImg = useCallback(() => {
+    setCurrentImageIndex(currentImageIndex - 1)
+  }, [setCurrentImageIndex, currentImageIndex])
+
+  const closeImgsViewer = useCallback(() => {
+    setCurrentImageIndex(0)
+    setImageViewerIsOpen(false)
+  }, [setCurrentImageIndex, setImageViewerIsOpen])
 
   return (
     <Layout>
@@ -21,22 +45,22 @@ const StopPageTemplate = ({ data }) => {
             <Nav.Item>
               <Nav.Link eventKey="daily-log">Daily Log</Nav.Link>
             </Nav.Item>
-            {golfing && (
+            {golfing && golfing.length > 0 && (
               <Nav.Item>
                 <Nav.Link eventKey="golfing">Golfing</Nav.Link>
               </Nav.Item>
             )}
-            {hiking && (
+            {hiking && hiking.length > 0 && (
               <Nav.Item>
                 <Nav.Link eventKey="hiking">Hiking</Nav.Link>
               </Nav.Item>
             )}
-            {lodging && (
+            {lodging && lodging.length > 0 && (
               <Nav.Item>
                 <Nav.Link eventKey="lodging">Lodging</Nav.Link>
               </Nav.Item>
             )}
-            {dining && (
+            {dining && dining.length > 0 && (
               <Nav.Item>
                 <Nav.Link eventKey="dining">Dining</Nav.Link>
               </Nav.Item>
@@ -75,7 +99,6 @@ const StopPageTemplate = ({ data }) => {
             <Tab.Pane eventKey="hiking">
               {hiking &&
                 hiking.map(item => {
-                  console.log(item)
                   return (
                     <div className="entry" key={item.title}>
                       <Card.Title>{item.title}</Card.Title>
@@ -126,10 +149,13 @@ const StopPageTemplate = ({ data }) => {
             <Tab.Pane eventKey="gallery">
               <Row className="gallery">
                 {galleryImages &&
-                  galleryImages.map(item => {
+                  galleryImages.map((item, index) => {
                     return (
                       <Col xs={12} sm={4} className="column" key={item}>
-                        <img src={item}></img>
+                        <img
+                          src={item}
+                          onClick={() => openImageViewer(index)}
+                        ></img>
                       </Col>
                     )
                   })}
@@ -138,6 +164,18 @@ const StopPageTemplate = ({ data }) => {
           </Tab.Content>
         </Row>
       </Tab.Container>
+      <ImgsViewer
+        imgs={galleryImages.map(item => {
+          return {
+            src: item,
+          }
+        })}
+        currImg={currentImageIndex}
+        isOpen={imageViewerIsOpen}
+        onClickPrev={gotoPrevImg}
+        onClickNext={gotoNextImg}
+        onClose={closeImgsViewer}
+      />
     </Layout>
   )
 }
