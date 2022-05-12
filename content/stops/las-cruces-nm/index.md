@@ -61,14 +61,18 @@ lodging:
     subtitle: Authentic Adobe Compound in Las Cruces, NM
     content: The Gem of Hacienda de Las Cruces
 galleryImages:
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652388154/IMG_4949_nswonh.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652388151/IMG_4951_jiioru.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652388149/IMG_4887_axy2oh.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652388149/IMG_4943_geonqf.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652388147/IMG_4929_hb7skg.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652388144/IMG_4888_iqkiu1.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652388138/IMG_4885_jyv7rx.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652388137/IMG_4878_qhbupq.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652388137/IMG_4920_xzdekh.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1652375014/SaguaroNPE.3_nn0gxy.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652375007/SaguaroNPE.4_rk4jad.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374993/SaguaroNPE.7_h8q6ie.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1652375005/SaguaroNPE.10_bnue46.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652375007/SaguaroNPE.9_ewkjda.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374992/SaguaroNPE.2_sonu9e.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374992/SaguaroNPE.8_jbktkj.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374988/SaguaroNPE.1_n4jjkc.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374982/RedHawkGC.3_fq4bzy.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374978/RedHawkGC.5_y9dknp.jpg
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374968/RedHawkGC.4_utaatc.jpg
 ---
