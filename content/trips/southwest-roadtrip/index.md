@@ -29,7 +29,9 @@ stops:
     endDate: May 8 2022
     city: Las Cruces
     state: NM
-    published: false
+    published: true
+    coverImage:
+      - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374982/RedHawkGC.3_fq4bzy.jpg
   - startDate: May 8 2022
     endDate: May 14 2022
     city: Tuscon
