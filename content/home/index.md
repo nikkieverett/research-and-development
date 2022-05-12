@@ -5,9 +5,9 @@ currentMapImage:
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1652062741/Tucson.1_ccemiv.png
 tripDetails:
   - title: Miles Driven
-    number: "1529"
+    number: "1589"
   - title: Days on the Road
-    number: "11"
+    number: "12"
   - title: Hikes Completed
     number: "7"
   - title: Rounds of Golf
