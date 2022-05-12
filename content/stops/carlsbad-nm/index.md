@@ -68,6 +68,34 @@ dailyLog:
 
 
       We made our way back to the Trinity Hotel and Restaurant in time for another tasty dinner. Hopefully Ruby will let us get some sleep tonight, we definitely need it! 😴
+  - date: May 6 22
+    title: Day 7
+    content: >-
+      We finally got a decent night sleep in the haunted hotel! Ruby must have
+      liked us and let us rest easy for a night. 👻 We found out that she didn't
+      like couples that argued so we were EXTRA nice to each other the whole
+      time we were there. 👫 
+
+
+      We dragged all of our luggage down the three flights of stairs and loaded up pretty swiftly. Interestingly enough the "hardest" car packing day ended up being the smoothest for us so far. Confirmed, we definitely work better under pressure. 
+
+
+      With two dinners under our belt at the Trinity Hotel Restaurant, we decided to give their breakfast a shot. The Trinity Hotel apparently never disappoints. This has definitely been our favorite stop so far and is going to be a really hard stop to beat for the rest of the trip. 
+
+
+      We jumped in the car and continued our journey west. A quick stop at White Sands National Park was a good way to break up the drive to our authentic adobe house in Las Cruces. Before we got to White Sands, we had the pleasure of driving through the Lincoln National Forest in the south central part of New Mexico. It was an absolute gorgeous part of the country and one we would love to visit again in the future. Not sure we would say the same about White Sands. Driving down the steep grade while exiting the national forest was pretty crazy and there were a couple of tiny (and super cute) mountain towns that we stopped in briefly to stretch our legs. Unfortunately, the most impressive part of White Sands was seeing it in the distance while coming out of the national forest. While not a total letdown, White Sands won't be a park we'll be chomping at the bit to visit again soon. 
+
+
+      After the White Sands stop, we were excited to get back on the road and get to the historic adobe house in Las Cruces. We arrived, checked in, unloaded the car and were pleasantly surprised by the size of the adobe Airbnb. Nikki took a video that we're hoping to share here eventually. #webdeveloperfeaturesftw 
+
+
+      The compound was a VERY authentic adobe house with multiple units including the main house where the hosts lived. Originally built in the late 1800s, it was very charming with some modern amenities including a wall A/C unit that cooled the 'bedroom' area well enough to sleep during the nights. However, authentic copper pipes throughout wasn't the greatest. Both of us were only able to shower once each because we couldn't take the smell of the water. Imagine dunking your face into a huge bowl of old pennies. That's what the water smelled like coming out of the pipes. ☠️ 
+
+
+      Having said all of that, Clara's Nest (the adobe Airbnb) was a good choice for a couple of nights in Las Cruces and was within walking distance to some downtown Las Cruces local favorites. We had some authentic Mexican food at Matteo's along with some amazing aguas frescas! 
+
+
+      We made a quick pit stop at The Little Toad Brewery and Distillery to sample some local beers on the way back to the house. Much more earthy tasting brews 🌿 but very good and a nice stop. Tomorrow is a day of rest for Nikki and golf for Ryan. YOLO friends! ❤️
 hiking:
   - title: Natural Entrance and Big Room Trail
     subtitle: Carlsbad Caverns
