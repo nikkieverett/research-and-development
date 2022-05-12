@@ -79,7 +79,7 @@ const StopPageTemplate = ({ data }) => {
                     <div className="entry" key={item.title}>
                       <Card.Title>{item.title}</Card.Title>
                       <Card.Subtitle>{item.date}</Card.Subtitle>
-                      {item.content}
+                      <p dangerouslySetInnerHTML={{ __html: item.content }}></p>
                     </div>
                   )
                 })}
