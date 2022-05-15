@@ -1,19 +1,19 @@
 ---
 title: Current Location
-currentLocation: Tucson, AZ
+currentLocation: Sedona, AZ
 currentMapImage:
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652062741/Tucson.1_ccemiv.png
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652592103/Sedona.1_m5mnx0.jpg
 tripDetails:
   - title: Miles Driven
-    number: "1589"
+    number: "1905"
   - title: Days on the Road
-    number: "12"
+    number: "14"
   - title: Hikes Completed
-    number: "7"
+    number: "8"
   - title: Rounds of Golf
-    number: "5"
+    number: "6"
   - title: Miles Hiked
-    number: "22.3"
+    number: "26.5"
   - title: Parks Visited
     number: "6"
 homeGalleryImages:
