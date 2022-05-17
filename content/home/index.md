@@ -7,11 +7,11 @@ tripDetails:
   - title: Miles Driven
     number: "1905"
   - title: Days on the Road
-    number: "16"
+    number: "17"
   - title: Hikes Completed
     number: "9"
   - title: Rounds of Golf
-    number: "7"
+    number: "8"
   - title: Miles Hiked
     number: "33.5"
   - title: Parks Visited
