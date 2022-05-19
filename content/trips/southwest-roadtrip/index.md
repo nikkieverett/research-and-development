@@ -34,7 +34,7 @@ stops:
       - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374982/RedHawkGC.3_fq4bzy.jpg
   - startDate: May 8 2022
     endDate: May 12 20
-    city: Tuscon
+    city: Tucson
     state: AZ
     published: true
     coverImage:
