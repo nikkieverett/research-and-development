@@ -33,10 +33,16 @@ stops:
     coverImage:
       - https://res.cloudinary.com/outdoorrnd/image/upload/v1652374982/RedHawkGC.3_fq4bzy.jpg
   - startDate: May 8 2022
-    endDate: May 14 2022
+    endDate: May 12 20
     city: Tuscon
     state: AZ
-    published: false
+    published: true
+    coverImage:
+      - https://res.cloudinary.com/outdoorrnd/image/upload/v1652997111/Tucson.1_scrkde.jpg
+  - startDate: May 12 22
+    endDate: May 14 22
+    city: Wickenburg
+    state: AZ
   - startDate: May 14 2022
     endDate: May 20 2022
     city: Sedona
