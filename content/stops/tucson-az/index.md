@@ -39,10 +39,10 @@ dailyLog:
       Dove Mountain. Really beautiful course and a very fun round. Didn't play
       particularly great but had fun nonetheless. Ended up playing with a lady
       from Toronto, Canada who was good company along the way. <br /> <br /> We
-      may some dinner tonight and was great to have a home cooked meal. (Let's
-      be honest though, Nikki made dinner. 💁‍♀️ ) We decided to rest after
-      dinner and ended up binge watching a bunch of movies. Early to bed, early
-      to rise again tomorrow!
+      made some dinner tonight and it was great to have a home cooked meal.
+      (Let's be honest though, Nikki made dinner. 💁‍♀️ ) We decided to rest
+      after dinner and ended up binge watching a bunch of movies. Early to bed,
+      early to rise again tomorrow!
   - date: May 11 22
     title: Day 12
     content: Another short update for today. We're saving our energy for longer
