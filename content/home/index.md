@@ -2,18 +2,18 @@
 title: Current Location
 currentLocation: Sedona, AZ
 currentMapImage:
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652592103/Sedona.1_m5mnx0.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1652994609/Sedona.2_t7rtu0.jpg
 tripDetails:
   - title: Miles Driven
-    number: "1905"
+    number: "1955"
   - title: Days on the Road
-    number: "17"
+    number: "19"
   - title: Hikes Completed
-    number: "9"
+    number: "10"
   - title: Rounds of Golf
-    number: "8"
+    number: "9"
   - title: Miles Hiked
-    number: "33.5"
+    number: "40.2"
   - title: Parks Visited
     number: "6"
 homeGalleryImages:
