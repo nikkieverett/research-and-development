@@ -1,21 +1,21 @@
 ---
 title: Current Location
-currentLocation: Sedona, AZ
+currentLocation: Page, AZ
 currentMapImage:
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1653018725/SedonaSelfie.1_kbuj2p.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1653110919/GrandCanyon.1_o3d9op.jpg
 tripDetails:
   - title: Miles Driven
-    number: "1975"
+    number: "2198"
   - title: Days on the Road
     number: "20"
   - title: Hikes Completed
-    number: "11"
+    number: "12"
   - title: Rounds of Golf
     number: "9"
   - title: Miles Hiked
-    number: "46.2"
+    number: "50.7"
   - title: Parks Visited
-    number: "6"
+    number: "7"
 homeGalleryImages:
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.1_issr2i.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.5_ipzzmf.jpg
