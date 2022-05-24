@@ -1,21 +1,21 @@
 ---
 title: Current Location
-currentLocation: Bryce Canyon National Park, UT
+currentLocation: Capitol Reef National Park, UT
 currentMapImage:
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1653193605/BryceCanyon.1_obh8l9.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1653413846/CapitolReef.1_sgf33h.jpg
 tripDetails:
   - title: Miles Driven
-    number: "2410"
+    number: "2515"
   - title: Days on the Road
-    number: "21"
+    number: "24"
   - title: Hikes Completed
-    number: "14"
+    number: "16"
   - title: Rounds of Golf
     number: "9"
   - title: Miles Hiked
-    number: "54.8"
+    number: "64.9"
   - title: Parks Visited
-    number: "10"
+    number: "12"
 homeGalleryImages:
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.1_issr2i.jpg
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1651725060/Lajitas.5_ipzzmf.jpg
