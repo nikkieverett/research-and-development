@@ -1,19 +1,19 @@
 ---
 title: Current Location
-currentLocation: Capitol Reef National Park, UT
+currentLocation: Durango, CO
 currentMapImage:
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1653413846/CapitolReef.1_sgf33h.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1653702205/Durango.1_vd3yjy.jpg
 tripDetails:
   - title: Miles Driven
-    number: "2515"
+    number: "2860"
   - title: Days on the Road
-    number: "24"
+    number: "28"
   - title: Hikes Completed
-    number: "16"
+    number: "18"
   - title: Rounds of Golf
-    number: "9"
+    number: "10"
   - title: Miles Hiked
-    number: "64.9"
+    number: "72.5"
   - title: Parks Visited
     number: "12"
 homeGalleryImages:
