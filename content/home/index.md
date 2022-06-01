@@ -1,17 +1,17 @@
 ---
 title: Current Location
-currentLocation: Durango, CO
+currentLocation: Denver, CO
 currentMapImage:
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1653702205/Durango.1_vd3yjy.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1654095169/Denver.2_iiexcy.jpg
 tripDetails:
   - title: Miles Driven
-    number: "2860"
+    number: "3225"
   - title: Days on the Road
-    number: "28"
+    number: "31"
   - title: Hikes Completed
     number: "18"
   - title: Rounds of Golf
-    number: "10"
+    number: "11"
   - title: Miles Hiked
     number: "72.5"
   - title: Parks Visited
