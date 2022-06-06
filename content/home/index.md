@@ -1,17 +1,17 @@
 ---
 title: Current Location
-currentLocation: Denver, CO
+currentLocation: Santa Fe, NM
 currentMapImage:
   - https://res.cloudinary.com/outdoorrnd/image/upload/v1654095169/Denver.2_iiexcy.jpg
 tripDetails:
   - title: Miles Driven
-    number: "3225"
+    number: "3605"
   - title: Days on the Road
-    number: "31"
+    number: "36"
   - title: Hikes Completed
     number: "18"
   - title: Rounds of Golf
-    number: "11"
+    number: "12"
   - title: Miles Hiked
     number: "72.5"
   - title: Parks Visited
