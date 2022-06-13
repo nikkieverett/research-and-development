@@ -1,13 +1,13 @@
 ---
 title: Current Location
-currentLocation: Santa Fe, NM
+currentLocation: Austin, TX (We're Home!)
 currentMapImage:
-  - https://res.cloudinary.com/outdoorrnd/image/upload/v1654095169/Denver.2_iiexcy.jpg
+  - https://res.cloudinary.com/outdoorrnd/image/upload/v1655146736/CapitolReef.2_yol0i8.jpg
 tripDetails:
   - title: Miles Driven
-    number: "3605"
+    number: "4450"
   - title: Days on the Road
-    number: "36"
+    number: "40"
   - title: Hikes Completed
     number: "18"
   - title: Rounds of Golf
